@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#88d982","inverse-surface":"#213528","tertiary-fixed":"#85f8c4","secondary":"#005faf","error":"#ba1a1a","inverse-on-surface":"#dff7e4","on-tertiary-fixed-variant":"#005137","on-primary":"#ffffff","error-container":"#ffdad6","surface-dim":"#c8e0ce","surface-bright":"#e9ffed","on-secondary-container":"#003567","surface-container-low":"#e1fae7","on-secondary-fixed":"#001c3a","primary":"#0d631b","surface-container-lowest":"#ffffff","tertiary-fixed-dim":"#68dba9","tertiary-container":"#007d57","on-primary-fixed":"#002204","background":"#e9ffed","tertiary":"#006243","on-tertiary-fixed":"#002114","primary-fixed":"#a3f69c","outline-variant":"#bfcaba","on-secondary":"#ffffff","surface-tint":"#1b6d24","secondary-fixed-dim":"#a5c8ff","outline":"#707a6c","surface-container-highest":"#d0e8d6","on-tertiary":"#ffffff","surface-variant":"#d0e8d6","primary-fixed-dim":"#88d982","primary-container":"#2e7d32","surface-container":"#dcf4e1","on-surface":"#0b1f14","on-background":"#0b1f14","on-tertiary-container":"#bdffdc","surface":"#e9ffed","on-surface-variant":"#40493d","secondary-fixed":"#d4e3ff","on-primary-container":"#cbffc2","on-secondary-fixed-variant":"#004786","on-error-container":"#93000a","secondary-container":"#54a0fe","on-error":"#ffffff","on-primary-fixed-variant":"#005312","surface-container-high":"#d6eedc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","gutter-mobile":"1rem","gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem","space-xl":"2rem"},"fontFamily":{"label-sm":["Inter"],"data-mono":["Space Mono"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"display-lg":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(26,46,34,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_1px_3px_rgba(26,46,34,0.08)]"><span class="material-symbols-outlined text-[24px]">radar</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">EcoScan AI</span><span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider uppercase">NGO Operations</span></div></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_1px_3px_rgba(26,46,34,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-label-md text-label-md">Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="environmental-map" href="#"><span class="material-symbols-outlined text-[20px]">public</span><span class="font-label-md text-label-md">Environmental Map</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-label-md text-label-md">Analytics</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold shadow-[0_1px_3px_rgba(26,46,34,0.04)]" data-path="community-campaigns" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-md text-label-md">Community Campaigns</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">4</span></a></nav><div class="mt-space-md mb-space-sm px-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Management &amp; Account</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_1px_3px_rgba(26,46,34,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">shield_person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Telemetry Sync</span></div><span class="font-data-mono text-data-mono text-primary">99.8%</span></div><div class="flex items-center justify-between pt-1 px-1"><span class="font-data-mono text-data-mono text-outline">v2.4.1 NGO-OS</span><a class="flex items-center gap-1 font-label-sm text-label-sm text-error hover:text-on-surface transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[16px]">logout</span><span>Log Out</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(26,46,34,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full max-w-md"><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline"><span class="material-symbols-outlined text-[18px]">search</span></div><input class="w-full pl-9 pr-14 py-2 bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" placeholder="Search sensor networks, telemetry alerts, zones..." type="text"/><div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-data-mono text-[10px]">⌘K</kbd></div></div><div class="hidden xl:flex items-center gap-2"><button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-container">filter_list</span><span>Air Quality</span></button><button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span><span>Water Basin</span></button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low shadow-[0_1px_3px_rgba(26,46,34,0.04)]"><span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-ping"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Grid Live</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-[0_1px_3px_rgba(26,46,34,0.12)] hover:bg-primary transition-all active:scale-95" type="button"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>New Dispatch</span></button><div class="flex items-center gap-space-sm pl-2"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">GreenEarth Alliance</span><span class="font-data-mono text-data-mono text-primary text-[11px]">NGO Partner #04</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-surface-container-high"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1440px] mx-auto w-full space-y-space-lg">
+<!-- Top Environmental Status & Mission Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-space-lg shadow-[0_1px_3px_rgba(26,46,34,0.04),0_6px_16px_-4px_rgba(26,46,34,0.03)]">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 -bottom-20 w-64 h-64 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Community Field Ops Network
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+            Community Ecological Action &amp; Campaigns
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Mobilize citizen volunteers, sponsor regional cleanups, track bio-restoration progress, and coordinate environmental drives with telemetry-verified impact metrics.
+          </p>
+</div>
+<!-- Action Controls -->
+<div class="flex flex-wrap items-center gap-space-sm pt-2 xl:pt-0">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Export Roster</span>
+</button>
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span>
+<span>Municipal Sync</span>
+</button>
+<button class="px-4 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Launch New Campaign</span>
+</button>
+</div>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-lg pt-space-md bg-surface-container-low/60 rounded-xl p-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Active Deployments</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">04</span>
+<span class="font-data-mono text-data-mono text-primary">+1 this wk</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Citizen Footprint</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">475</span>
+<span class="font-data-mono text-data-mono text-primary">89% Cap</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Estuarine Plastic Intercepted</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">18.4 <span class="text-sm font-normal text-on-surface-variant">MT</span></span>
+<span class="font-data-mono text-data-mono text-secondary">Telemetry Val</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Total CO₂ Sequestration</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">142 <span class="text-sm font-normal text-on-surface-variant">Tons</span></span>
+<span class="font-data-mono text-data-mono text-primary">Verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter and Categorization Navigation Bar -->
+<div class="space-y-space-sm">
+<!-- Status Tabs -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="inline-flex p-1 rounded-xl bg-surface-container-high/60">
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all" type="button">
+            All Campaigns (8)
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" type="button">
+            Ongoing Active (4)
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" type="button">
+            Upcoming (3)
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" type="button">
+            Completed &amp; Audited (12)
+          </button>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">Sort By:</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm" type="button">
+<span>Critical Priority</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<button class="px-3.5 py-1.5 rounded-full font-label-sm text-label-sm font-semibold bg-primary text-on-primary shadow-sm whitespace-nowrap" type="button">
+          All Categories
+        </button>
+<button class="px-3.5 py-1.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap shadow-sm" type="button">
+          Plastic Cleanup Drives
+        </button>
+<button class="px-3.5 py-1.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap shadow-sm" type="button">
+          Tree Plantation &amp; Reforestation
+        </button>
+<button class="px-3.5 py-1.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap shadow-sm" type="button">
+          Lake &amp; Wetland Restoration
+        </button>
+<button class="px-3.5 py-1.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap shadow-sm" type="button">
+          Recycling &amp; Circular Awareness
+        </button>
+</div>
+</div>
+<!-- Main Content Layout: Campaign Grid + Side Impact Panel -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- 4 Prominent Campaign Cards (8 Columns on XL) -->
+<div class="xl:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- CARD 1: Plastic Cleanup Drive -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(26,46,34,0.04),0_6px_16px_-4px_rgba(26,46,34,0.03)] hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Documentary photography of coastal marine environmental volunteers actively collecting ocean plastic flotsam and synthetic debris along a Kerala estuary shoreline with sorbent booms and sustainable collection sacks, morning golden light, high resolution, organic tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOiz-xdyietubPRww4hnG2KelBZXpKkIR5FBmr3O2nvNOBWaqjvhAMH3nQiEwr-LFtRL2h9A_CNP3Fmc9xSJ5z8UnpuvedTFkHegVjlapTm2QkiISv49wumtAbUN-twqb34GF_LA00SNws9I9OxZouucam5j5qAfB_fjzPUvMP2t6hKoTGhyPCb9TA-d4haTVQr5olw9gwJpSMTFCjZ_FsQT-i4yGMXab1f0lDzIgH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-surface-bright/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold shadow-sm">
+                Plastic Cleanup Drive
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm font-semibold text-white">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                Active • 84% Target Met
+              </span>
+<span class="font-data-mono text-data-mono bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">Sector 04-B</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-snug">
+                Operation Blue Coast: Cochin Estuary Plastic Interdiction
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Deploying volunteer squads and floating sorbent booms to extract synthetic polymer flotsam along the 12km tidal barrier.
+              </p>
+</div>
+<!-- Card Metadata -->
+<div class="space-y-space-xs pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">event</span>
+<span class="font-semibold text-body-sm">Sat, Nov 15, 2025 • 07:00 AM - 12:30 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">pin_drop</span>
+<span class="truncate">Cochin Littoral Mangrove Sanctuary</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">inventory_2</span>
+<span class="truncate text-[12px]">Gloves, Sorbent Nets, Waders, Waste Scales</span>
+</div>
+<!-- Volunteer Progress Bar -->
+<div class="space-y-1 pt-2">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Squad Target</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">180 / 200 Registered</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors text-center shadow-sm" type="button">
+                Register as Volunteer
+              </button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="View Logistics" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="Share Campaign" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Tree Plantation & Reforestation -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(26,46,34,0.04),0_6px_16px_-4px_rgba(26,46,34,0.03)] hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Eco volunteers ankle-deep in estuarine mud flats planting juvenile Rhizophora mangrove propagules along a serene tidal coastline, sunny tropical day, scientific field conservation project, environmental realism" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeVCJsEeCJrg2IC8CYJVor8C5ZFFz-OnmO-VRJvMm8-h6vo50GGoQHG8igAQ9R4jV5Dy9dkulECcwUza14xTSECw3Rv_cp14AsKC9e7lzX6JQH76XAQ98pUUiYcrAi5PmbfrjkylBzrL6UaqAlz_AmqI4P5ugRQppiRfY4GBcmdgAQVJWd7Z4ewDAzdmRWQ2muhR6HxKa5RPeWFZVEqLsV54dDM2XkG0Z4Mbf43g-l"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-surface-bright/90 backdrop-blur-md text-tertiary font-label-sm text-label-sm font-semibold shadow-sm">
+                Tree Plantation
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-container/90 backdrop-blur-sm font-semibold text-white">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                Upcoming • Open
+              </span>
+<span class="font-data-mono text-data-mono bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">Estuary Z-2</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-snug">
+                Mangrove Biosphere Shield: 5,000 Rhizophora Planting
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Restoring natural coastal storm surge protection and estuarine fish nurseries by propagating native red mangrove propagules.
+              </p>
+</div>
+<!-- Card Metadata -->
+<div class="space-y-space-xs pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">event</span>
+<span class="font-semibold text-body-sm">Sun, Nov 23, 2025 • 08:00 AM - 02:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">pin_drop</span>
+<span class="truncate">Vypin Coastal Estuary Zone 2</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">yard</span>
+<span class="truncate text-[12px]">5,000 Propagules, Mud Boots, GPS Taggers</span>
+</div>
+<!-- Volunteer Progress Bar -->
+<div class="space-y-1 pt-2">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Squad Target</span>
+<span class="font-data-mono text-data-mono text-tertiary font-bold">95 / 150 Registered</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 63%;"></div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors text-center shadow-sm" type="button">
+                Register as Volunteer
+              </button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="View Logistics" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="Share Campaign" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Lake & Wetland Restoration -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(26,46,34,0.04),0_6px_16px_-4px_rgba(26,46,34,0.03)] hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Restoration technicians and student volunteers installing floating aquatic bio-reed wetland beds on an emerald lake inlet to clear algal blooms, technical monitoring buoy visible, daylight, pristine photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI64cxE1GhLfMmq9Y7z-JdGeyeqNOO0Ktq55J8loGz4UzP-lYoeakPFkq_CKNOH5AvEI7joyd-55tKLKdMvkE6A5qk6p9SC-jvNKP7AxE6waCC50xcmOLbYNqSXh05yO3VQTs9tQmOmhPVuaJR4yzoVeRyR62zx2Of6JUZXST-tSRVZF199g61lz5Yyh03OPc46VazMWHsEnsJsb6cmhWTaaWjGLjYxsGMwLInCnkO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-surface-bright/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-semibold shadow-sm">
+                Lake Restoration
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary/80 backdrop-blur-sm font-semibold text-white">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                Ongoing • Week 3
+              </span>
+<span class="font-data-mono text-data-mono bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">South Basin</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-snug">
+                Vembanad Wetland Revival: Cyanobacteria &amp; Silt Decontamination
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Deploying acoustic bio-filtration systems and shoreline micro-wetlands to mitigate harmful algal blooms and industrial agricultural runoff.
+              </p>
+</div>
+<!-- Card Metadata -->
+<div class="space-y-space-xs pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">event</span>
+<span class="font-semibold text-body-sm">Weekends through Dec 2025</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">pin_drop</span>
+<span class="truncate">Vembanad Wetland South Inlet Basin</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">sailing</span>
+<span class="truncate text-[12px]">4 Hydro-Vessels Deployed &amp; Bio-Filters</span>
+</div>
+<!-- Volunteer Progress Bar -->
+<div class="space-y-1 pt-2">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Squad Target</span>
+<span class="font-data-mono text-data-mono text-secondary font-bold">140 / 160 Active Volunteers</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 87%;"></div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors text-center shadow-sm" type="button">
+                Register as Volunteer
+              </button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="View Logistics" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="Share Campaign" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Recycling & Circular Economy Awareness -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(26,46,34,0.04),0_6px_16px_-4px_rgba(26,46,34,0.03)] hover:shadow-md transition-shadow">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Community workshop hall with educational instructors and high school students segregating colorful recyclable polymers into categorized clear bins with optical scanning sensors, bright daylight, vibrant engagement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-U8137_z-w7cQQOyJyUnpDih4qH38nWJCfcktSDbwk-9nBzzZyT_hsx_eLfJAK1d8jfEq_tbGPFkfM-8gKqO_ybe02wpgZCXYrBjjzPtUbAsqGW_myPEjN4V6fCXVPbW5IaHD2FKouDNghNuL9nBAfIzW6JMMqYI1CzKuVtAgOALy81iVYjRL8yuHkDr7J8HOkDVWHtL25lblREKHhS-3X6bXNTcyotyYhcSUfTys"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-surface-bright/90 backdrop-blur-md text-[#92400e] font-label-sm text-label-sm font-semibold shadow-sm">
+                Recycling Awareness
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-highest/90 text-on-surface-variant backdrop-blur-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Upcoming • Outreach
+              </span>
+<span class="font-data-mono text-data-mono bg-black/40 px-2 py-0.5 rounded backdrop-blur-sm">Civic Hub</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-snug">
+                Zero-Waste City Initiative: Decentralized Polymer Sorting Drive
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Interactive workshop teaching municipal residents how to classify #2 HDPE, #4 LDPE, and #5 PP polymers for decentralized circular recycling hubs.
+              </p>
+</div>
+<!-- Card Metadata -->
+<div class="space-y-space-xs pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">event</span>
+<span class="font-semibold text-body-sm">Dec 05, 2025 • 10:00 AM - 04:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">pin_drop</span>
+<span class="truncate">GreenEarth Civic Community Center</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">recycling</span>
+<span class="truncate text-[12px]">Classification Kits, Optical Analyzers</span>
+</div>
+<!-- Volunteer Progress Bar -->
+<div class="space-y-1 pt-2">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Squad Target</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">60 / 80 Registered</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2 pt-space-xs">
+<button class="flex-1 py-2 px-3 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors text-center shadow-sm" type="button">
+                Register as Volunteer
+              </button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="View Logistics" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors" title="Share Campaign" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Community Leaderboard, Realtime Map Node & Impact Summary (4 Columns on XL) -->
+<div class="xl:col-span-4 space-y-space-md">
+<!-- Live Action Map Preview -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_1px_3px_rgba(26,46,34,0.04),0_6px_16px_-4px_rgba(26,46,34,0.03)] space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Active Field Clusters</h4>
+</div>
+<span class="font-data-mono text-data-mono text-outline">GPS Calibrated</span>
+</div>
+<!-- Static Map Component -->
+<div class="w-full h-44 rounded-xl bg-cover bg-center relative overflow-hidden shadow-inner flex items-end p-3" data-location="Cochin Kerala Coastal Estuary" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9uI0g5vlxBoxmFwWqA_228lfD2a_7h7gDiPvkn5XpGg6uUybfOmMYA5mi9tNN5NbZkNf2WcfRisA_kkYbGhRqyinywJYyGB3NwQBSjrdFeT8JisDs_TP7Eg2HQf2gC25zAg2u6qceC0JIOHtlzuI8-RSJ8wgbeLH0Ct_fmPSNIybcg4MHaQk7lx9TMwGc-lO9OV459ASrp1TPjW8nM8ZjUVFZIhgHC0YumoIQ7NBB')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+<div class="relative z-10 w-full flex items-center justify-between text-white">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold">4 Active Deployments</span>
+</div>
+<a class="px-2.5 py-1 rounded-md bg-white/20 hover:bg-white/30 backdrop-blur-md font-label-sm text-label-sm text-white transition-all" href="#">
+                Expand Map
+              </a>
+</div>
+</div>
+</div>
+<!-- Leaderboard Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_1px_3px_rgba(26,46,34,0.04),0_6px_16px_-4px_rgba(26,46,34,0.03)] space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">military_tech</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Top Volunteer Leaders</h4>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-outline">Nov 2025</span>
+</div>
+<div class="space-y-space-sm divide-y-0">
+<!-- Rank 1 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-bold font-data-mono text-[12px] flex items-center justify-center">
+                  1
+                </div>
+<div>
+<h5 class="font-label-md text-label-md font-bold text-on-surface">Dr. Anita Nair</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Estuary Bio-Sampling Lead</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-data-mono text-data-mono font-bold text-primary">48.5 hrs</span>
+<p class="text-[11px] text-outline font-data-mono">1.2T Cleaned</p>
+</div>
+</div>
+<!-- Rank 2 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-bold font-data-mono text-[12px] flex items-center justify-center">
+                  2
+                </div>
+<div>
+<h5 class="font-label-md text-label-md font-bold text-on-surface">Rahul Varma</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Mangrove Propagule Squad</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-data-mono text-data-mono font-bold text-primary">42.0 hrs</span>
+<p class="text-[11px] text-outline font-data-mono">620 Trees</p>
+</div>
+</div>
+<!-- Rank 3 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-bold font-data-mono text-[12px] flex items-center justify-center">
+                  3
+                </div>
+<div>
+<h5 class="font-label-md text-label-md font-bold text-on-surface">Devika Pillai</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Youth Polymer Workshop</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-data-mono text-data-mono font-bold text-primary">36.5 hrs</span>
+<p class="text-[11px] text-outline font-data-mono">9 Workshops</p>
+</div>
+</div>
+<!-- Rank 4 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-bold font-data-mono text-[12px] flex items-center justify-center">
+                  4
+                </div>
+<div>
+<h5 class="font-label-md text-label-md font-bold text-on-surface">Karthik Menon</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Wetland Vessel Pilot</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-data-mono text-data-mono font-bold text-primary">31.0 hrs</span>
+<p class="text-[11px] text-outline font-data-mono">4 Basins</p>
+</div>
+</div>
+</div>
+<button class="w-full py-2 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition-colors flex items-center justify-center gap-1" type="button">
+<span>View Full Community Roster (1,248)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Verified Impact Summary Card -->
+<div class="bg-primary-container text-on-primary rounded-2xl p-space-md shadow-md space-y-space-sm relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider font-semibold">Sensor-Validated Ledger</span>
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">verified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-white">
+            Quarterly NGO Impact Ledger
+          </h4>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+            All campaign debris weigh-ins and sapling GPS geo-tags are cryptographic stamped directly to the municipal carbon accounting network.
+          </p>
+<div class="pt-2 grid grid-cols-2 gap-2 text-white">
+<div class="p-2.5 rounded-lg bg-black/10 backdrop-blur-sm">
+<span class="text-[11px] font-label-sm uppercase tracking-wider block text-on-primary-container">Plastic Diverted</span>
+<span class="font-data-mono text-lg font-bold">18.4 MT</span>
+</div>
+<div class="p-2.5 rounded-lg bg-black/10 backdrop-blur-sm">
+<span class="text-[11px] font-label-sm uppercase tracking-wider block text-on-primary-container">Carbon Offset</span>
+<span class="font-data-mono text-lg font-bold">142 Tons</span>
+</div>
+</div>
+<button class="w-full mt-3 py-2 rounded-xl bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+            Download Environmental Audit Certificate
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

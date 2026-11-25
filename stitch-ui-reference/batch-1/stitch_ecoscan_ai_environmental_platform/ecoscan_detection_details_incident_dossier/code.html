@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#88d982","tertiary-fixed-dim":"#68dba9","surface":"#e9ffed","surface-variant":"#d0e8d6","surface-bright":"#e9ffed","tertiary-container":"#007d57","error":"#ba1a1a","on-primary-container":"#cbffc2","primary-fixed":"#a3f69c","error-container":"#ffdad6","on-secondary-fixed-variant":"#004786","on-error-container":"#93000a","on-primary-fixed":"#002204","on-primary":"#ffffff","secondary-container":"#54a0fe","surface-container-lowest":"#ffffff","background":"#e9ffed","on-surface":"#0b1f14","on-tertiary-fixed-variant":"#005137","inverse-surface":"#213528","on-tertiary":"#ffffff","on-background":"#0b1f14","secondary-fixed-dim":"#a5c8ff","surface-tint":"#1b6d24","on-error":"#ffffff","primary-container":"#2e7d32","tertiary":"#006243","secondary":"#005faf","primary":"#0d631b","surface-container-low":"#e1fae7","inverse-on-surface":"#dff7e4","on-primary-fixed-variant":"#005312","on-tertiary-fixed":"#002114","outline":"#707a6c","on-secondary":"#ffffff","outline-variant":"#bfcaba","on-tertiary-container":"#bdffdc","inverse-primary":"#88d982","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c3a","on-surface-variant":"#40493d","surface-container-high":"#d6eedc","surface-container-highest":"#d0e8d6","surface-dim":"#c8e0ce","tertiary-fixed":"#85f8c4","on-secondary-container":"#003567","surface-container":"#dcf4e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","margin":"2rem","space-xs":"0.25rem","gutter":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem"},"fontFamily":{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"data-mono":["Space Mono"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight block">EcoScan</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Citizen Portal</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="upload-and-detect" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span>Upload &amp; Detect</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm" data-path="detection-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Detection History</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="recommendations-and-action-guides" href="#"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Action Guides</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="user-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span>User Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-1"><div class="bg-surface-container rounded-xl p-3.5 flex items-center gap-3"><div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div><div><div class="font-label-sm text-label-sm text-on-surface font-semibold">Local Station #402</div><div class="font-data-mono text-data-mono text-tertiary">Sensor Mesh Active</div></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Log Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 placeholder:text-on-surface-variant/70" placeholder="Search detections, environmental threats, guides..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden xl:flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-data-mono text-data-mono">AQI 28 (Good)</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-data-mono text-data-mono">Water pH 7.2 (Nominal)</span></div></div><div class="relative flex items-center"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button></div><div class="flex items-center gap-3 pl-3"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Elena Rostova</div><div class="font-label-sm text-label-sm text-tertiary">Citizen Ranger • Tier 2</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-gutter py-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Navigation & Breadcrumb Layer -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-space-lg">
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Detection History</span>
+</a>
+<span class="font-data-mono text-data-mono text-on-surface-variant/60 hidden sm:inline">/</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant font-medium hidden sm:inline">DOSSIER-ARCHIVE-9412</span>
+</div>
+<!-- Actions Toolbar -->
+<div class="flex items-center gap-2.5 flex-wrap">
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px] text-tertiary">edit_note</span>
+<span>Report Correction</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary">share</span>
+<span>Share Incident</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-md transition-all">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Download PDF Certificate</span>
+</button>
+</div>
+</div>
+<!-- Primary Incident Title Header Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="space-y-1.5">
+<div class="flex items-center gap-2.5 flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-data-mono text-data-mono text-on-surface-variant font-semibold tracking-wider">#ESC-2025-9412</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span>Active Interdiction • NGO Dispatched</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[14px]">satellite_alt</span>
+            Sector 04-B Littoral
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">
+          Incident Dossier: Polyethylene Marine Flotsam
+        </h1>
+</div>
+<!-- Quick Telemetry Chips -->
+<div class="flex items-center gap-3">
+<div class="px-4 py-2 rounded-xl bg-surface-container-low flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Interdiction Priority</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">Tier 1 • Urgent</span>
+</div>
+<div class="px-4 py-2 rounded-xl bg-surface-container-low flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Target Est. Volume</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">18.4 m²</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Asymmetric Bento Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter mb-space-lg">
+<!-- Left Main Column: Visual Evidence + AI Overlay (7 Columns) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- Environmental Scan Viewport with AI Bounding Box Overlay -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">center_focus_strong</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sensor Imagery Spectrum</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-data-mono text-data-mono text-on-surface-variant">RAW RGB + Multi-spectral</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" id="toggleOverlayBtn">
+              Toggle Mask
+            </button>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">High-Fidelity AI Pass</span>
+</div>
+</div>
+<!-- Scanned Coastal Scene Container -->
+<div class="relative w-full h-[440px] rounded-lg overflow-hidden bg-surface-container-high shadow-inner select-none">
+<img class="w-full h-full object-cover" data-alt="Photorealistic coastal mangrove beach with entangled high-density plastic debris, discarded polyethylene bottles, blue and white synthetic nets washed ashore in tidal flats. Kerala coast, ambient midday sunlight reflecting off damp salt sand and mangrove roots, crystal clarity, ecological telemetry perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU7n0J_QNP3XweubD-kN4jxfT6VT_HYaAQ2ltNAVKsJp2H92mMdECcJF6geKOCGlerpez55BV5hDTLAlpbtykR_QnP3jjagkmOqw7UJJCoXZd287aD3NopfS6sypjRBRlQYSjNvxVc7eQg0BuyFNNdnuohMx0Xp75YGzW4s-V-767-hJJxApGbWNhPpvEmdQZ2qowdZFzEC5Ka7qP647hcS3fHakmVQVRBqI2s-buQ"/>
+<!-- AI Segmented Overlay Box & Dynamic HUD Reticle -->
+<div class="absolute top-16 left-12 right-20 bottom-24 rounded-lg bg-primary-container/20 backdrop-blur-[2px] transition-all duration-300" id="aiBoundingBox">
+<!-- Corner Accents -->
+<div class="absolute -top-1 -left-1 w-4 h-4 bg-primary rounded-tl"></div>
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-tr"></div>
+<div class="absolute -bottom-1 -left-1 w-4 h-4 bg-primary rounded-bl"></div>
+<div class="absolute -bottom-1 -right-1 w-4 h-4 bg-primary rounded-br"></div>
+<!-- Floating AI Telemetry Ribbon -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded shadow-md flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-data-mono text-data-mono text-on-surface font-bold">HD-PE / MARINE FLOTSAM</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-data-mono text-data-mono font-semibold">98.7% CONF</span>
+</div>
+<!-- Quantitative Footprint Tag -->
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">square_foot</span>
+<span class="font-data-mono text-data-mono text-on-surface">Calculated Area: <strong class="font-semibold text-primary">18.4 m²</strong></span>
+</div>
+<!-- Decorative Center Crosshair Target -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center opacity-70 pointer-events-none">
+<div class="w-full h-0.5 bg-primary/40"></div>
+<div class="h-full w-0.5 bg-primary/40 absolute"></div>
+<div class="w-4 h-4 rounded-full bg-primary/20 absolute"></div>
+</div>
+</div>
+<!-- Bottom Geolocation Bar Strip -->
+<div class="absolute bottom-0 inset-x-0 bg-inverse-surface/85 backdrop-blur-md px-4 py-2.5 text-inverse-on-surface flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">place</span>
+<span class="font-data-mono text-data-mono font-medium">9.9281° N, 76.2599° E — Sector 04-B Littoral Mangrove</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-inverse-on-surface/75">Tidal Zone: Low (+0.3m)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span class="font-data-mono text-data-mono text-secondary-fixed">Sensor Node: ST-402</span>
+</div>
+</div>
+</div>
+<!-- Visual Sensor Spectrum Switcher & Metadata -->
+<div class="grid grid-cols-3 gap-2.5">
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">filter_vintage</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">NDVI Degradation</span>
+<span class="block font-data-mono text-data-mono text-on-surface font-semibold">-0.42 (Stress Index)</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">waves</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">Tidal Dispersion</span>
+<span class="block font-data-mono text-data-mono text-on-surface font-semibold">1.2 knots South-West</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">aspect_ratio</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">Depth Estimate</span>
+<span class="block font-data-mono text-data-mono text-on-surface font-semibold">0.18m Dense Matt</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Reporter & Filing Information Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[22px]">badge</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Observer &amp; Ingestion Metadata</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant bg-surface-container px-2.5 py-1 rounded">Cryptographically Signed</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Reported By</span>
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">ER</div>
+<div>
+<span class="block font-body-md text-body-md text-on-surface font-semibold">Elena Rostova</span>
+<span class="block font-label-sm text-label-sm text-tertiary">Citizen Ranger Lvl 2</span>
+</div>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Submission Timestamp</span>
+<div>
+<span class="block font-data-mono text-data-mono text-on-surface font-semibold">Oct 28, 2024</span>
+<span class="block font-data-mono text-data-mono text-on-surface-variant">14:22:18 UTC (Local 19:52)</span>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Capture Instrument</span>
+<div>
+<span class="block font-body-md text-body-md text-on-surface font-semibold">Mobile Sensor Stream</span>
+<span class="block font-data-mono text-data-mono text-on-surface-variant">iPhone 15 Pro • 48MP Dual Quad</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Field Collaboration & Incident Notes -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">forum</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Field Notes &amp; Squad Dispatch Channel</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-medium">3 Synchronized Updates</span>
+</div>
+<!-- Thread Messages -->
+<div class="flex flex-col gap-3.5 mb-space-md">
+<!-- Comment 1 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Devon Vance</span>
+<span class="px-2 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Alliance Dispatcher</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">15:10 UTC</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Triage validated flotsam volume exceeds single volunteer capacity. Mangrove root structure is trapping fragments. Squad 03 redirected with shallow water salvage skiff.
+              </p>
+</div>
+</div>
+<!-- Comment 2 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Unit 4 Lead (GreenEarth)</span>
+<span class="px-2 py-0.2 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Field Ops</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">15:42 UTC</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                En route to Sector 04-B. ETA 18 minutes. Carrying polymer containment nets and sample containers for post-cleanup toxin assay.
+              </p>
+</div>
+</div>
+<!-- Comment 3 -->
+<div class="p-3.5 rounded-lg bg-surface-container flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[16px]">person</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Elena Rostova</span>
+<span class="px-2 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Reporting Ranger</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">15:48 UTC</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Staked high-water mark with fluorescent marker tape to monitor tidal drift until boat arrival. Juvenile mud crabs spotted in perimeter.
+              </p>
+</div>
+</div>
+</div>
+<!-- Add Note Input -->
+<div class="flex gap-2">
+<input class="flex-1 px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest placeholder:text-on-surface-variant/70 shadow-inner" placeholder="Add operational note or coordinate field squad..." type="text"/>
+<button class="px-4 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Broadcast</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Main Column: AI Predictions, Risk Metrics, Stepper (5 Columns) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Detailed AI Prediction & Confidence Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">psychology</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">AI Neural Prediction</span>
+</div>
+<span class="px-2.5 py-0.5 rounded bg-surface-container font-data-mono text-data-mono text-tertiary font-semibold">
+            Eco-Net Vision v4.8
+          </span>
+</div>
+<!-- Primary Target Classification Card -->
+<div class="p-4 rounded-xl bg-surface-container-low mb-space-md">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Primary Classification</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+              HIGH SEVERITY
+            </span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mb-1">
+            High-Density Polyethylene &amp; Microplastic
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Degraded chemical packaging, industrial maritime netting, and shredded polyolefin container fragments.
+          </p>
+</div>
+<!-- Confidence Gauge Subsystem -->
+<div class="space-y-3.5 mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Sub-Model Verification Metrics</span>
+<!-- Metric 1 -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Spectral Absorption Match</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">99.1%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 99.1%"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Polymer Edge &amp; Filament Morphology</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">98.4%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 98.4%"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Synthetic Texture / Edge Gradient</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">98.6%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 98.6%"></div>
+</div>
+</div>
+</div>
+<!-- Inline Visual Breakdown Sparkline / Multi-Vector Radar Ring -->
+<div class="p-3.5 rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<svg class="w-12 h-12 text-primary -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98.7, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div>
+<span class="font-data-mono text-data-mono text-on-surface font-bold block">98.7% Global Aggregate</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Cross-Validated across 42,000 Coastal Marine sets</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+</div>
+</div>
+<!-- Environmental Impact & Risk Vectors -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-2 mb-space-md">
+<span class="material-symbols-outlined text-error text-[22px]">warning</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Environmental Hazard Assessment</span>
+</div>
+<div class="space-y-3">
+<!-- Vector 1: Fauna -->
+<div class="p-3.5 rounded-lg bg-error-container/40 flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-error-container flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">cruelty_free</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Marine Fauna Hazard: Critical Risk</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Acute ingestion &amp; entanglement threat to nursery crabs, mud skippers, and juvenile estuary teleosts within the littoral mangrove.
+              </p>
+</div>
+</div>
+<!-- Vector 2: Chemical Leaching -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">science</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Chemical Leaching Index: High</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Accelerated UV photolysis triggering phthalate, BPA, and organotin micro-dispersion into coastal sediment layer.
+              </p>
+</div>
+</div>
+<!-- Vector 3: Biodegradation Span -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">timelapse</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Biodegradation Lifespan: 450+ Years</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Synthetic structural polymer will fragment into sub-millimeter particles without biological dissolution.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Resolution Stepper & NGO Live Updates -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">route</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Incident Resolution Lifecycle</span>
+</div>
+<span class="font-data-mono text-data-mono text-primary font-semibold">Step 4 of 5</span>
+</div>
+<!-- Vertical Stepper -->
+<div class="relative pl-6 space-y-5 before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1: Done -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Scan Submitted</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">14:22 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Telemetry packet ingested from Elena Rostova.</p>
+</div>
+<!-- Step 2: Done -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">AI Verified &amp; Segmented</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">14:23 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">98.7% high-density polyethylene confidence scored.</p>
+</div>
+<!-- Step 3: Done -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Triage by GreenEarth Alliance</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">15:05 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Action approved: Classified as Priority Tier 1 clean order.</p>
+</div>
+<!-- Step 4: Active -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-md animate-pulse">
+<span class="material-symbols-outlined text-[14px]">navigation</span>
+</span>
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold">Rapid Clean Squad Dispatched</span>
+<span class="font-data-mono text-data-mono text-secondary font-semibold">15:40 UTC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Unit 4 Skiff in transit • Current ETA: 18 min to shore.</p>
+</div>
+<!-- Step 5: Upcoming -->
+<div class="relative opacity-60">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+</span>
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium">Decontamination &amp; Audit Scan</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Pending</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Post-removal drone scan &amp; soil toxin neutralization.</p>
+</div>
+</div>
+<!-- Stepper Direct Dispatch Contact Link -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Field Squad Lead: <strong>Capt. R. Thomas</strong></span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:underline" href="#">
+<span>Ping Squad Radio</span>
+<span class="material-symbols-outlined text-[16px]">podcasts</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Location Context & Satellite Geo-Frame -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Regional GIS Environmental Spatial Layer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sector 04-B Littoral Mangrove Sanctuary • Autonomous Station Mesh ST-402</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container font-data-mono text-data-mono text-on-surface">Spatial Accuracy ± 0.8m</span>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+<span>Switch to Infrared Satellite</span>
+</button>
+</div>
+</div>
+<!-- Map Container -->
+<div class="w-full h-72 rounded-lg bg-cover bg-center relative overflow-hidden shadow-inner flex items-end p-space-md" data-location="Cochin Mangrove Coastal Sector 04-B Kerala" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSuw0jv8yb8cEMj6BBjw7IuN2rHL6aHXn0Nb37UBi-lY9keTBiy2m5cLHku9iFn56QsIIkr-j5-zy1dqvPsojvnkAJoeJaeAE29j6uBZMWeLBK6fvhvLaelSqamKJBSDRWWAlo3O6BVKwidTbBhiAWwtLJ0bN7V4SgTfStTFGIGVdV-JliiQkyyA8ikdzURO66_T6lIqWJyvmd9YlQr46vKRKYOe42NLjJg8glY8C_')">
+<!-- Floating Map Sensor Overlay -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-3.5 rounded-xl shadow-md max-w-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-error-container text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold block">Incident Flotsam Epicenter</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant block">Lat 9.9281° N • Long 76.2599° E</span>
+<span class="font-label-sm text-label-sm text-primary font-medium block mt-0.5">High Water Shoreline Buffer Zone</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction script for mask toggling -->
+<script>
+    (function() {
+      const toggleBtn = document.getElementById('toggleOverlayBtn');
+      const boundingBox = document.getElementById('aiBoundingBox');
+      if (toggleBtn && boundingBox) {
+        let visible = true;
+        toggleBtn.addEventListener('click', function() {
+          visible = !visible;
+          if (visible) {
+            boundingBox.style.opacity = '1';
+            boundingBox.style.pointerEvents = 'auto';
+            toggleBtn.textContent = 'Toggle Mask';
+          } else {
+            boundingBox.style.opacity = '0';
+            boundingBox.style.pointerEvents = 'none';
+            toggleBtn.textContent = 'Show Mask';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

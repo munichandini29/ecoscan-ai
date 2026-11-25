@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Space+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-background":"#0b1f14","tertiary-fixed-dim":"#68dba9","tertiary-fixed":"#85f8c4","inverse-primary":"#88d982","secondary":"#005faf","on-secondary-fixed-variant":"#004786","on-primary":"#ffffff","primary-fixed-dim":"#88d982","on-tertiary-fixed-variant":"#005137","surface-tint":"#1b6d24","secondary-fixed-dim":"#a5c8ff","on-primary-fixed":"#002204","background":"#e9ffed","on-error":"#ffffff","on-secondary":"#ffffff","outline-variant":"#bfcaba","on-tertiary-container":"#bdffdc","error-container":"#ffdad6","inverse-surface":"#213528","surface-dim":"#c8e0ce","on-secondary-container":"#003567","on-tertiary-fixed":"#002114","on-primary-fixed-variant":"#005312","surface-bright":"#e9ffed","secondary-container":"#54a0fe","surface-container-low":"#e1fae7","tertiary-container":"#007d57","surface-variant":"#d0e8d6","primary":"#0d631b","on-surface-variant":"#40493d","surface-container-high":"#d6eedc","surface-container":"#dcf4e1","primary-container":"#2e7d32","surface":"#e9ffed","on-surface":"#0b1f14","secondary-fixed":"#d4e3ff","tertiary":"#006243","inverse-on-surface":"#dff7e4","primary-fixed":"#a3f69c","on-secondary-fixed":"#001c3a","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","surface-container-highest":"#d0e8d6","on-primary-container":"#cbffc2","on-error-container":"#93000a","error":"#ba1a1a","outline":"#707a6c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-xl":"2rem","space-sm":"0.5rem","gutter":"1.5rem"},"fontFamily":{"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"data-mono":["Space Mono"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"]},"fontSize":{"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">radar</span></div><div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface block leading-tight">EcoScan</span><span class="font-label-sm text-label-sm text-tertiary font-bold tracking-wider uppercase">Threat Ops</span></div></div><span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold border border-outline-variant/30">PROD</span></div><div class="px-space-md py-space-sm overflow-y-auto max-h-[calc(100vh-14rem)]"><div class="px-3 pt-3 pb-1 text-on-surface-variant/70 font-label-sm text-label-sm uppercase font-bold tracking-wider">Main Navigation</div><nav class="space-y-1" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="users" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-md text-label-md">Users</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-label-md text-label-md">Reports</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-xl transition-all bg-primary text-on-primary font-semibold shadow-sm" data-path="categories" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Categories</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-model" href="#"><span class="material-symbols-outlined text-[20px]">neurology</span><span class="font-label-md text-label-md">AI Model</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-label-md text-label-md">Analytics</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ngos" href="#"><span class="material-symbols-outlined text-[20px]">corporate_fare</span><span class="font-label-md text-label-md">NGOs</span></a><a class="flex items-center justify-between px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></div><span class="w-2 h-2 rounded-full bg-secondary"></span></a></nav><div class="px-3 pt-5 pb-1 text-on-surface-variant/70 font-label-sm text-label-sm uppercase font-bold tracking-wider">Governance &amp; System</div><nav class="space-y-1" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Settings</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span class="font-label-md text-label-md">Profile</span></a></nav></div></div><div class="p-space-md m-space-sm bg-surface-container-low rounded-xl flex flex-col gap-space-sm shadow-[0_1px_3px_rgba(26,46,34,0.04)]"><div class="flex items-center justify-between"><span class="font-data-mono text-data-mono text-on-surface-variant">v3.2.0-ADMIN-ENT</span><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-data-mono text-data-mono text-primary font-semibold">24ms</span></div></div><a class="flex items-center justify-center gap-2 py-1.5 px-3 rounded-lg text-error hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[16px]">logout</span><span>Log Out</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">SUPERADMIN CONSOLE</span><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-12 py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Search telemetry, models, users..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-data-mono text-[10px]">⌘K</kbd></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-data-mono text-data-mono text-on-surface-variant">US-East • 99.98% SLA • All Nodes Healthy</span></div><div class="flex items-center gap-space-md"><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary"></span></button><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-3 pl-1"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Alistair Vance</div><div class="font-label-sm text-label-sm text-on-surface-variant">SuperAdmin / Architect</div></div><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-tertiary border-2 border-surface-container-lowest"></span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1440px] mx-auto w-full space-y-space-xl">
+<!-- Top Header Banner Area -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-data-mono text-data-mono font-bold tracking-wider uppercase">CV-NEURAL-TAXONOMY v4.18</span>
+<span class="text-outline-variant">•</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Hyperspectral Satellite &amp; Drone Sync</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">Environmental Detection Taxonomy &amp; Category Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">Configure computer vision neural taxonomy classifiers, threat grading thresholds, spectral signatures, and statutory compliance mapping.</p>
+</div>
+<!-- Primary Controls -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container-low transition-colors" id="exportMatrixBtn">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Export Class Matrix</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container-low transition-colors" id="reindexTaxonomyBtn">
+<span class="material-symbols-outlined text-[18px] text-secondary">cached</span>
+<span>Re-Index Taxonomies</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-md hover:bg-primary-container transition-all" id="openNewCategoryModal">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add New Category</span>
+</button>
+</div>
+</div>
+<!-- Category KPI Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Total Active Categories</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">category</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">8</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">classes configured</span>
+</div>
+<div class="mt-2 flex items-center gap-2 text-primary font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>100% Core coverage</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Trained Spectral Anchors</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">filter_vintage</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">142</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">hyperspectral models</span>
+</div>
+<div class="mt-2 flex items-center gap-2 text-secondary font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">satellite_alt</span>
+<span>Sentinel-2 &amp; Landsat-9</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Total Classified Incidents</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">148,210</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">events parsed</span>
+</div>
+<div class="mt-2 flex items-center gap-2 text-tertiary font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+14.2% past 30 days</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Mean Detection F1 Score</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">98.8%</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">global precision</span>
+</div>
+<div class="mt-2 flex items-center gap-2 text-primary font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Validated by EPA Tier 1</span>
+</div>
+</div>
+</div>
+<!-- Active Class Filters and Search Header Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold">All Categories (5 Active)</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">High Risk / Statutory</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">Aquatic &amp; Marine</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">Atmospheric &amp; Thermal</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">Biome Baselines</button>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">filter_list</span>
+<input class="pl-9 pr-3 py-1.5 w-64 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="taxonomyFilterInput" placeholder="Filter subclasses or tags..." type="text"/>
+</div>
+<span class="text-on-surface-variant font-data-mono text-data-mono">Sorted by Risk Weight</span>
+</div>
+</div>
+<!-- Core Taxonomy Cards Grid (5 Specified Classes) -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-lg">
+<!-- Card 1: Plastic Waste -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div>
+<!-- Card Header & Status Switch -->
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-[#ecfdf5] text-[#059669] flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">recycling</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Plastic Waste</h2>
+<span class="px-2 py-0.5 rounded-full bg-[#ecfdf5] text-[#059669] font-label-sm text-label-sm font-bold uppercase tracking-wider">Emerald Tag</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-data-mono text-[10px]">MARPOL ANNEX V</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High-altitude multispectral detection of synthetic non-biodegradable debris and micro-aggregate matrices.</p>
+</div>
+</div>
+<!-- Active Status Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Model & Detection Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-2 mt-4 p-space-sm rounded-lg bg-surface-container-low">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Model Weights</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">ResNet-Polymer-v9.4</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Detections Recorded</div>
+<div class="font-data-mono text-data-mono text-primary font-bold">48,290 incidents</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">F1 Precision / Conf</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">98.9% <span class="text-on-surface-variant">(≥ 85% thresh)</span></div>
+</div>
+</div>
+<!-- Subclasses & Spectral Details -->
+<div class="mt-4 space-y-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Classified Subclasses</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Macro-flotsam</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">HDPE polymers</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">PET microplastics</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Fishing net spools</span>
+</div>
+</div>
+<!-- Visual Telemetry Anchor Sample -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-lowest border-0 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-16 h-12 rounded-lg object-cover shadow-sm" data-alt="High resolution aerial drone perspective of ocean coastal plastics and marine debris clusters floating along turquoise shallow bay waters with high contrast daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDddfjU0ckB6-L62cIE1N2NLhHXr_6joIcE8h_qCNQQmqf8gxwZ7cCXQ4eZXwLBILtEc6RAbQTgq-x_4ygj7IZTv3eDF1pKds3hSGS0U20VlStlLUYnJJeQPL_D27uvmkSfoqc8ZfRnX0hlX8-T_dkOgDV3HIukFiC6hhL3pkn7iHYBZ2ucBV2lg5uadySqYqdnt5XBAm6cVHAtFgKGtqDGl4W6ZWyj1-aJdDZeGoNY"/>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block">Spectral Signature: 780nm - 1200nm SWIR</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Anchor calibration: Pacific Gyre Sector 4</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed/50 px-2 py-1 rounded">Active Stream</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-sm flex items-center justify-between border-0 gap-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span>Edit Category Parameters</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>View Training Samples</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" title="Delete Category">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Garbage & Municipal Dumps -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div>
+<!-- Card Header & Status Switch -->
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-[#fffbeb] text-[#b45309] flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">delete_sweep</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Garbage &amp; Municipal Dumps</h2>
+<span class="px-2 py-0.5 rounded-full bg-[#fffbeb] text-[#b45309] font-label-sm text-label-sm font-bold uppercase tracking-wider">Amber Tag</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-data-mono text-[10px]">EPA RCRA SUBTITLE D</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Automated perimeter boundary violation identification for illicit dumping grounds and hazardous leachate zones.</p>
+</div>
+</div>
+<!-- Active Status Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Model & Detection Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-2 mt-4 p-space-sm rounded-lg bg-surface-container-low">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Model Weights</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">YOLO-Landfill-11e</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Detections Recorded</div>
+<div class="font-data-mono text-data-mono text-primary font-bold">32,140 incidents</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">F1 Precision / Conf</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">97.4% <span class="text-on-surface-variant">(≥ 80% thresh)</span></div>
+</div>
+</div>
+<!-- Subclasses & Spectral Details -->
+<div class="mt-4 space-y-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Classified Subclasses</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Unauthorized landfills</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Open construction debris</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Medical / hazardous bio-waste</span>
+</div>
+</div>
+<!-- Visual Telemetry Anchor Sample -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-lowest border-0 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-16 h-12 rounded-lg object-cover shadow-sm" data-alt="Satellite thermal imaging visual representation showing illegal unpermitted open landfill waste mounds bordering peri-urban forest boundaries with distinct heat profiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtD6-4WywUoFjt5P6ZLx_dXP36Wygc4pTNkz1GYSR1bh4s5BDTXg3y3YdWAR6BrQ0EnW2OYCss4319vNVJy2yIEhW2oRHg8hdUQxod6IJvQlCgavl7eg71FlZfx3a7JgZNrCWXD9KoS35hduMGUE4_7qOlvNxYpQN1RVFA2O-mJuwZtp54-B8Y7pfsV8XEUthbwbyyWU9zle9MZrCJLCdjUgH1fAE_K8UiX-7jC1pO"/>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block">Spectral Signature: 8.5µm - 12.0µm TIR</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Anchor calibration: Sub-Saharan Corridor A</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed/50 px-2 py-1 rounded">Active Stream</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-sm flex items-center justify-between border-0 gap-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span>Edit Category Parameters</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>View Training Samples</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" title="Delete Category">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Water Pollution & Chemical Runoff -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div>
+<!-- Card Header & Status Switch -->
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">water_drop</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Water Pollution &amp; Chemical Runoff</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">Ocean Blue</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-data-mono text-[10px]">CWA SEC 303(D)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Chlorophyll-a indices, hydrocarbon oil sheen reflections, and point-source effluent discharge telemetry.</p>
+</div>
+</div>
+<!-- Active Status Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Model & Detection Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-2 mt-4 p-space-sm rounded-lg bg-surface-container-low">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Model Weights</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">HydroNet-Vision-v6</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Detections Recorded</div>
+<div class="font-data-mono text-data-mono text-primary font-bold">28,640 incidents</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">F1 Precision / Conf</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">99.1% <span class="text-on-surface-variant">(≥ 90% thresh)</span></div>
+</div>
+</div>
+<!-- Subclasses & Spectral Details -->
+<div class="mt-4 space-y-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Classified Subclasses</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Cyanobacteria blooms</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Industrial heavy metals</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Chemical slick</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Thermal pollution</span>
+</div>
+</div>
+<!-- Visual Telemetry Anchor Sample -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-lowest border-0 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-16 h-12 rounded-lg object-cover shadow-sm" data-alt="Overhead aerial image of toxic algal cyanobacteria bloom swirling in vivid iridescent green patterns through river delta confluence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-wg6E0XdzQ8BCEkC9BCUnV7SJfFugc6USLAIh5Dlgi4Jp06xicvWPEWlmEmjipZwsMjpLt0MIAhQKH58uNqODXUFl5Of5tHNS4E3NdiZBHERCLJn-GH2DAU5JYPtsMR-8G0L_kYjP3rBZAuedpqVL_j897iMCEJ34w5M4u-JvcQUQstBHnPLCgXN3NWoCSPt6FX-SRufe1Rzh0ss2YLKMdBuZkuz3kGhmUwoY1jI1"/>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block">Spectral Signature: 665nm - 705nm Red Edge</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Anchor calibration: Lake Erie Outflow Basin</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed/50 px-2 py-1 rounded">Active Stream</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-sm flex items-center justify-between border-0 gap-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span>Edit Category Parameters</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>View Training Samples</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" title="Delete Category">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Smoke Pollution & Flare Emissions -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div>
+<!-- Card Header & Status Switch -->
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface-variant flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">air</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Smoke Pollution &amp; Flare Emissions</h2>
+<span class="px-2 py-0.5 rounded-full bg-[#f3e8ff] text-[#7e22ce] font-label-sm text-label-sm font-bold uppercase tracking-wider">Purple Tag</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-data-mono text-[10px]">CAA TITLE V</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aerosol optical depth mapping and unpermitted chimney flare particulate plume segmentation.</p>
+</div>
+</div>
+<!-- Active Status Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Model & Detection Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-2 mt-4 p-space-sm rounded-lg bg-surface-container-low">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Model Weights</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">AeroDeep-Plume-8x</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Detections Recorded</div>
+<div class="font-data-mono text-data-mono text-primary font-bold">24,190 incidents</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">F1 Precision / Conf</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">98.2% <span class="text-on-surface-variant">(≥ 88% thresh)</span></div>
+</div>
+</div>
+<!-- Subclasses & Spectral Details -->
+<div class="mt-4 space-y-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Classified Subclasses</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Petrochemical flares</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Crop smoldering</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Unpermitted foundry smoke</span>
+</div>
+</div>
+<!-- Visual Telemetry Anchor Sample -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-lowest border-0 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-16 h-12 rounded-lg object-cover shadow-sm" data-alt="Telephoto perspective of industrial factory stack spewing dense smoke and chemical plume against a clear sky with computer vision bounding box vectors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBek_P_96i5PxxIE2d2MF8FhYmOJ3FYO2uQCSwS2tejZtf595Ut8nl4V3VPChKLcDiqdfcy70ejpLVClDcWIemjTKfmvRNm4sfalX1Q6N9r8NwfITiHq_adgSfyvl7UGw5vYQtFMNH8-7aUv6n7mE1p0de64Twyx878QhaSUJcH03rO30JUgjN28_Bz_KxgPoI68J46z6ebTAml8s1QmecmA90r8tbKKu2pnbPgVoQh"/>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block">Spectral Signature: 3.9µm MWIR &amp; UV Band 3</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Anchor calibration: Ruhr Industrial Array</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed/50 px-2 py-1 rounded">Active Stream</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-sm flex items-center justify-between border-0 gap-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span>Edit Category Parameters</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>View Training Samples</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" title="Delete Category">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Card 5: Clean Environment & Pristine Biome (Spans across both columns on desktop for distinct visual weight) -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md xl:col-span-2">
+<div>
+<!-- Card Header & Status Switch -->
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">forest</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Clean Environment &amp; Pristine Biome</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Forest Green</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-data-mono text-[10px]">IUCN RED LIST COMPLIANT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ground-truth baseline negative controls and healthy ecological balance monitoring for anomaly detection engines.</p>
+</div>
+</div>
+<!-- Active Status Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Model & Detection Metrics Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-4 p-space-sm rounded-lg bg-surface-container-low">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Model Weights</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">EcoPure-Biome-v3.0</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Baseline Calibrations</div>
+<div class="font-data-mono text-data-mono text-primary font-bold">14,950 calibrations</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">F1 Precision / Conf</div>
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">99.6% <span class="text-on-surface-variant">(≥ 92% thresh)</span></div>
+</div>
+</div>
+<!-- Subclasses & Spectral Details -->
+<div class="mt-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">Classified Subclasses</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Healthy mangrove canopy</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Living coral reef</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm">Uncontaminated freshwater stream</span>
+</div>
+</div>
+<!-- In-card miniature SVG metric representation -->
+<div class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-lowest">
+<svg class="w-12 h-12 text-primary" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="99.6, 100" stroke-width="3"></path>
+</svg>
+<div>
+<span class="font-data-mono text-data-mono text-on-surface font-bold">99.6% Purity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Negative Reference</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-sm flex items-center justify-between border-0 gap-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span>Edit Category Parameters</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span>View Training Samples</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" title="Delete Category">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Model Re-Index / Matrix Audit Drawer Modal -->
+<div class="hidden fixed inset-0 z-50 overflow-y-auto bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="newCategoryModal">
+<div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl p-space-lg space-y-space-md">
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">add_circle</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Add New Environmental Category</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Specify computer vision neural weights, spectral signatures, and regulatory statutory references.</p>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" id="closeModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+<!-- Category Name -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Category Name</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="e.g. Methane Plumes &amp; Landfill Gas" type="text"/>
+</div>
+<!-- Threat Tier -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Threat Tier Grading</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary">
+<option>Tier 1 - Critical Bio-Threat</option>
+<option>Tier 2 - Severe Municipal Violation</option>
+<option>Tier 3 - Moderate Runoff / Debris</option>
+<option>Tier 4 - Pristine Biome Baseline</option>
+</select>
+</div>
+<!-- Color Code -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Visual Palette / Color Code</label>
+<div class="flex items-center gap-2">
+<input class="w-10 h-9 p-0.5 rounded border-0 bg-surface-container-low cursor-pointer" type="color" value="#059669"/>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" type="text" value="#059669 (Emerald Alert)"/>
+</div>
+</div>
+<!-- Optical Spectrum Anchor -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Optical Spectrum Profile</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary">
+<option>SWIR (Short-Wave Infrared 780-1200nm)</option>
+<option>VNIR (Visible &amp; Near-Infrared 400-1000nm)</option>
+<option>TIR (Thermal Infrared 8.5-12.0µm)</option>
+<option>SAR (Synthetic Aperture Radar C-Band)</option>
+</select>
+</div>
+<!-- Statutory Compliance Tag -->
+<div class="space-y-1 md:col-span-2">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Statutory Regulatory Tag (EPA / MARPOL / UNEP)</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="e.g. EPA CLEAN AIR ACT § 112(R) / MARPOL 73/78" type="text"/>
+</div>
+<!-- Initial Classification Subclasses -->
+<div class="space-y-1 md:col-span-2">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Subclasses (Comma Separated)</label>
+<textarea class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="e.g. Pipeline flaring, Venting gas, fugitive biogas emissions..." rows="2"></textarea>
+</div>
+</div>
+<!-- Modal Actions -->
+<div class="pt-space-md flex items-center justify-end gap-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" id="cancelModalBtn">
+            Cancel
+          </button>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-md hover:bg-primary-container transition-all flex items-center gap-1.5" id="saveCategoryBtn">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Register &amp; Train Taxonomy</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Lightweight interactivity for category management modal & action feedback
+    const modal = document.getElementById('newCategoryModal');
+    const openBtn = document.getElementById('openNewCategoryModal');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const saveBtn = document.getElementById('saveCategoryBtn');
+    const reindexBtn = document.getElementById('reindexTaxonomyBtn');
+    const exportBtn = document.getElementById('exportMatrixBtn');
+
+    const toggleModal = (show) => {
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    };
+
+    if (openBtn) openBtn.addEventListener('click', () => toggleModal(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleModal(false));
+    if (cancelBtn) cancelBtn.addEventListener('click', () => toggleModal(false));
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        saveBtn.innerText = 'Registering Classifier...';
+        setTimeout(() => {
+          saveBtn.innerText = 'Classifier Initialized!';
+          setTimeout(() => {
+            toggleModal(false);
+            saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Register & Train Taxonomy</span>';
+          }, 800);
+        }, 600);
+      });
+    }
+
+    if (reindexBtn) {
+      reindexBtn.addEventListener('click', () => {
+        const icon = reindexBtn.querySelector('.material-symbols-outlined');
+        if (icon) icon.classList.add('animate-spin');
+        setTimeout(() => {
+          if (icon) icon.classList.remove('animate-spin');
+        }, 1200);
+      });
+    }
+
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const originalText = exportBtn.innerHTML;
+        exportBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">done</span><span>Matrix CSV Generated</span>';
+        setTimeout(() => {
+          exportBtn.innerHTML = originalText;
+        }, 1500);
+      });
+    }
+
+    // In-page search filter
+    const filterInput = document.getElementById('taxonomyFilterInput');
+    if (filterInput) {
+      filterInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('.xl\\:grid-cols-2 > div');
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+  </script>
+</div></main></div></body></html>

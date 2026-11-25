@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#88d982","tertiary-fixed-dim":"#68dba9","surface":"#e9ffed","surface-variant":"#d0e8d6","surface-bright":"#e9ffed","tertiary-container":"#007d57","error":"#ba1a1a","on-primary-container":"#cbffc2","primary-fixed":"#a3f69c","error-container":"#ffdad6","on-secondary-fixed-variant":"#004786","on-error-container":"#93000a","on-primary-fixed":"#002204","on-primary":"#ffffff","secondary-container":"#54a0fe","surface-container-lowest":"#ffffff","background":"#e9ffed","on-surface":"#0b1f14","on-tertiary-fixed-variant":"#005137","inverse-surface":"#213528","on-tertiary":"#ffffff","on-background":"#0b1f14","secondary-fixed-dim":"#a5c8ff","surface-tint":"#1b6d24","on-error":"#ffffff","primary-container":"#2e7d32","tertiary":"#006243","secondary":"#005faf","primary":"#0d631b","surface-container-low":"#e1fae7","inverse-on-surface":"#dff7e4","on-primary-fixed-variant":"#005312","on-tertiary-fixed":"#002114","outline":"#707a6c","on-secondary":"#ffffff","outline-variant":"#bfcaba","on-tertiary-container":"#bdffdc","inverse-primary":"#88d982","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c3a","on-surface-variant":"#40493d","surface-container-high":"#d6eedc","surface-container-highest":"#d0e8d6","surface-dim":"#c8e0ce","tertiary-fixed":"#85f8c4","on-secondary-container":"#003567","surface-container":"#dcf4e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","margin":"2rem","space-xs":"0.25rem","gutter":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem"},"fontFamily":{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"data-mono":["Space Mono"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight block">EcoScan</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Citizen Portal</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm" data-path="upload-and-detect" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span>Upload &amp; Detect</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="detection-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Detection History</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="recommendations-and-action-guides" href="#"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Action Guides</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="user-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span>User Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-1"><div class="bg-surface-container rounded-xl p-3.5 flex items-center gap-3"><div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div><div><div class="font-label-sm text-label-sm text-on-surface font-semibold">Local Station #402</div><div class="font-data-mono text-data-mono text-tertiary">Sensor Mesh Active</div></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Log Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 placeholder:text-on-surface-variant/70" placeholder="Search detections, environmental threats, guides..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden xl:flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-data-mono text-data-mono">AQI 28 (Good)</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-data-mono text-data-mono">Water pH 7.2 (Nominal)</span></div></div><div class="relative flex items-center"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button></div><div class="flex items-center gap-3 pl-3"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Elena Rostova</div><div class="font-label-sm text-label-sm text-tertiary">Citizen Ranger • Tier 2</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-gutter py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Dynamic Notification Bar / Quick Audit Status -->
+<div class="flex flex-wrap items-center justify-between gap-4 bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-data-mono text-data-mono">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span>NODE SYNC: ACTIVE</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" data-path="detection-history" href="#">Detections</a>
+<span class="text-outline-variant">/</span>
+<span class="font-data-mono text-primary font-semibold">INCIDENT #ESC-2025-9412</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-data-mono text-data-mono">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span> 14:28:09 UTC</span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="hidden md:flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">satellite_alt</span> Sentinel-2 L2A Calibrated</span>
+</div>
+</div>
+<!-- Primary Header & Global Actions Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-2.5">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span> Critical Threat Vector
+        </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Class 04 Biological Threat</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+        Threat Identified: High-Density Polyethylene &amp; Marine Plastic Debris
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Synthetic chemical contaminant signature confirmed via hyperspectral anomaly segmentation model (ResNet-Eco-v4.2).
+      </p>
+</div>
+<!-- Action Button Cluster -->
+<div class="flex flex-wrap items-center gap-2.5 shrink-0">
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" id="btn-save">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span>Saved</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" id="btn-share">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share</span>
+</button>
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-highest font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" data-path="upload-and-detect" href="#">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+<span>Upload Another</span>
+</a>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-sm" id="btn-download-pdf">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Download PDF Report</span>
+</button>
+</div>
+</div>
+<!-- Main Grid: Telemetry Viewport (Left) vs Assessment Stack (Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (Cols 1-7): Spectral Viewport & Diagnostics -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- High Precision Detection Canvas -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm overflow-hidden flex flex-col gap-space-sm">
+<!-- Viewport Toolbar -->
+<div class="flex items-center justify-between flex-wrap gap-2 pb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Telemetry Sensor Canvas</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">4096 x 2732 RAW</span>
+</div>
+<!-- Spectral Overlay Toggles -->
+<div class="inline-flex p-1 bg-surface-container rounded-lg gap-1" id="spectral-toggle-group">
+<button class="spectral-btn active px-3 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary shadow-xs transition-all" data-mode="neural">
+              Neural Mask
+            </button>
+<button class="spectral-btn px-3 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-mode="truecolor">
+              True Color
+            </button>
+<button class="spectral-btn px-3 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-mode="nir">
+              Thermal NIR
+            </button>
+</div>
+</div>
+<!-- Render Surface Frame -->
+<div class="relative w-full h-[460px] rounded-lg overflow-hidden bg-inverse-surface group select-none">
+<img class="w-full h-full object-cover transition-filter duration-300" data-alt="Wide high angle photographic shot of a coastal river mouth with visible floating plastic waste accumulation, crushed HDPE bottles, tangled nylon fishing line and synthetic debris clustered along estuarine littoral muddy embankment. Cold daylight, natural environmental documentary style with subtle clean analytical depth and high clarity." id="detection-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7eEzn-2WG8suTqGvXDEK5SmWuMlMqoT-SirXz9DGsVgJ4lYUUchEHmBY9fjfm0xDMfL2ugBV3T9dz_AWe87a-nlGyoiXOZaGiyUYQW7u8f0HbhjxBTZX8u2b9C-G0BcTOhdr770wHAu3F0q2wsrIb-UYogQUU4F2JhfiM4sRTvwImv1VmpoX1BtgC2v8MhD4GhyteQ3fEF9bN5Cx-fqpbd9GDTpfRuWC1krMamgii"/>
+<!-- Neural Mask Overlay Shroud (SVG Vector Layer) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-300" id="spectral-overlay-svg" preserveaspectratio="none" viewbox="0 0 800 500">
+<defs>
+<pattern height="40" id="grid-pattern" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"></path>
+</pattern>
+<lineargradient id="neural-fill" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#005faf" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#0d631b" stop-opacity="0.35"></stop>
+</lineargradient>
+</defs>
+<!-- Diagnostic Grid -->
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+<!-- Highlighted Debris Cluster Polygon -->
+<polygon class="animate-pulse" fill="url(#neural-fill)" points="140,110 490,95 620,290 530,410 180,390 110,240" stroke="#85f8c4" stroke-dasharray="6,4" stroke-width="2"></polygon>
+</svg>
+<!-- Precision Neural Bounding Box #01 -->
+<div class="absolute top-[18%] left-[16%] w-[62%] h-[64%] pointer-events-none transition-opacity duration-300" id="neural-bounding-box">
+<!-- Box Corners -->
+<div class="absolute -top-1 -left-1 w-3 h-3 bg-tertiary-fixed border-2 border-surface-container-lowest"></div>
+<div class="absolute -top-1 -right-1 w-3 h-3 bg-tertiary-fixed border-2 border-surface-container-lowest"></div>
+<div class="absolute -bottom-1 -left-1 w-3 h-3 bg-tertiary-fixed border-2 border-surface-container-lowest"></div>
+<div class="absolute -bottom-1 -right-1 w-3 h-3 bg-tertiary-fixed border-2 border-surface-container-lowest"></div>
+<!-- Header Badge for Box -->
+<div class="absolute -top-7 left-0 bg-inverse-surface/90 text-inverse-on-surface backdrop-blur-md px-3 py-1 rounded shadow-md flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span class="font-data-mono text-data-mono font-bold tracking-tight text-tertiary-fixed">ANOMALY #01: HDPE Polymer 98.7% Conf</span>
+<span class="text-outline-variant font-data-mono text-[10px]">|</span>
+<span class="font-data-mono text-[11px] text-inverse-on-surface/80">Area: 18.4 m²</span>
+</div>
+<!-- Bottom Diagnostic Metric -->
+<div class="absolute -bottom-6 right-0 bg-inverse-surface/90 text-inverse-on-surface backdrop-blur-md px-2.5 py-0.5 rounded shadow-sm font-data-mono text-[10px] flex items-center gap-1.5">
+<span>LAT: -33.8614°</span>
+<span class="text-outline-variant">•</span>
+<span>LON: 151.2108°</span>
+</div>
+</div>
+<!-- Bottom Telemetry Bar on Viewport -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md px-3.5 py-2 rounded-lg flex items-center justify-between text-on-surface shadow-md">
+<div class="flex items-center gap-4 font-data-mono text-data-mono">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> GSD: 0.12m/px</span>
+<span class="hidden sm:inline text-outline-variant">|</span>
+<span class="hidden sm:inline">SWIR Radiance: 4.81 µW/cm²</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1 rounded hover:bg-surface-container transition-colors text-on-surface-variant" title="Fullscreen Zoom">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container transition-colors text-on-surface-variant" title="Recenter Grid">
+<span class="material-symbols-outlined text-[18px]">center_focus_strong</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sensor Verification Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 pt-1">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Hydrocarbon Index</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">CHI-88 (Severe)</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Polymer Fraction</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">82.4% Polyolefins</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Water Flow Velocity</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">0.42 m/s downstream</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Sensor Station Match</span>
+<span class="font-data-mono text-data-mono font-semibold text-primary">Station #402 (Active)</span>
+</div>
+</div>
+</div>
+<!-- Environmental Impact Analysis Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-transparent pb-1">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Ecological Toxicity &amp; Impact Horizon</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Multi-trophic ecotoxicity modeling &amp; degradation timeline</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container font-data-mono text-data-mono text-tertiary">ISO 14044 VALIDATED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Toxicity Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-2.5">
+<div class="flex items-center gap-2 text-error">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span class="font-label-md text-label-md font-semibold">Ecological Risk Vector</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              High acute toxicity risk to marine wildlife and benthic organisms. Rapid fragmentation into secondary microplastics accelerates bio-accumulation in estuarine filter feeders and fish populations.
+            </p>
+<div class="mt-1 pt-2 flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Leaching Hazard (Phthalates &amp; BPA)</span>
+<span class="font-data-mono text-error font-semibold">Elevated (8.7/10)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 87%"></div>
+</div>
+</div>
+</div>
+<!-- Persistence Horizon Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between gap-2.5">
+<div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">hourglass_empty</span>
+<span class="font-label-md text-label-md font-semibold">Persistence Horizon</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-none">450+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">Years</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Estimated abiotic decomposition half-life under estuarine UV and hydrodynamic stress before complete mineralisation.
+              </p>
+</div>
+<!-- Inline Mini Sparkline (Decomposition Timeline Curve) -->
+<div class="bg-surface-container p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Leachate Dissolution Peak</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">Years 2 – 14</span>
+</div>
+<svg class="w-32 h-8 text-primary" fill="none" viewbox="0 0 120 30">
+<path d="M0,25 Q30,5 60,18 T120,28" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<circle cx="38" cy="11" fill="#ba1a1a" r="3"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- Ground Contamination Scope Note -->
+<div class="p-3 bg-surface-container rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">water_drop</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold">Groundwater Alert:</strong> Downstream seepage zone intersects with shallow coastal aquifers feeding agricultural Sector 09-West within 3.2 km.
+          </div>
+</div>
+</div>
+</div>
+<!-- Right Column (Cols 8-12): Core Assessment & Action Checklist -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Core Assessment Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Automated Audit Classification</span>
+<span class="font-data-mono text-data-mono text-tertiary">CONF-ID #9412</span>
+</div>
+<!-- Issue Title & Confidence Meter -->
+<div class="flex flex-col gap-2">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Detected Anomaly Subject</div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold leading-snug">
+            Polyethylene &amp; Marine Macro-Plastics
+          </div>
+<div class="flex items-center justify-between mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span>Machine Learning Confidence</span>
+<span class="font-data-mono text-primary font-bold text-body-md">98.7% High Precision</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 98.7%"></div>
+</div>
+</div>
+<div class="space-y-3 pt-2">
+<!-- Severity Alert Pill Card -->
+<div class="p-3.5 rounded-xl bg-error-container text-on-error-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-error">fmd_bad</span>
+<div>
+<div class="font-label-sm text-label-sm font-bold tracking-wider uppercase text-error">High Severity</div>
+<div class="font-body-sm text-body-sm text-on-error-container">Interdiction window &lt; 24h</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-data-mono text-data-mono font-bold text-error shadow-xs">
+              P-1 CRITICAL
+            </span>
+</div>
+<!-- Location & Biotope -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Threat Vector &amp; Biotope</span>
+<span class="font-data-mono text-data-mono text-secondary">GIS ZONE #04B</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">explore</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Estuarine Littoral Zone • Sector 04-B</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+              Tidal estuarine confluence connecting Salt Marsh Reserve to Open Pelagic Bay.
+            </div>
+</div>
+</div>
+<!-- Biotope Micro Map Preview -->
+<div class="relative rounded-lg overflow-hidden h-36 bg-surface-container" data-location="Port Jackson Estuary Marine Zone" style="">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Satellite GIS topographical map texture showing coastal shoreline, estuary waterways, depth contours in emerald and slate tones with pinpoint marker." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6016VEkqOEh8KFsmEExG17D32vK4yMzPoH_v311oaR4eCHy9d6KhLHze8wizF3M6n3M2APQh0TllNTqWaba6M2DrxZMRrTFAJNcJAgmzIThovMW46kclKU3cZBuDICXcdGueWGHzpLHEx2Z3rDjSBjiqvrXCz8SIt_HhQNiiDAC5HKISHghCV-yqM8EId94H6W64VtsoZIwgS843JmQEZmbDvB6dxGYSNaA7ns1KH')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-inverse-on-surface">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">pin_drop</span>
+<span>Coordinates: 33°51'41" S 151°12'39" E</span>
+</div>
+<span class="font-data-mono text-data-mono bg-inverse-surface/90 px-2 py-0.5 rounded text-[11px]">Radius: 500m</span>
+</div>
+</div>
+</div>
+<!-- Recommended Environmental Actions Checklist -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recommended Actions</h2>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">3 PROTOCOLS</span>
+</div>
+<!-- Interdiction Checklist -->
+<div class="flex flex-col gap-3">
+<!-- Step 1 -->
+<label class="group flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer select-none">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">1. Immediate Containment</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-[10px]">IN PROGRESS</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Deploy floating sorbent boom across estuary channel neck (Transverse Sector 4) to arrest tidal migration.
+              </span>
+</div>
+</label>
+<!-- Step 2 -->
+<label class="group flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer select-none">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">2. Municipal Notification</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">DISPATCHED</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Auto-routed emergency remediation ticket #GA-771 dispatched to GreenEarth Alliance &amp; City Sanitation Dept.
+              </span>
+</div>
+</label>
+<!-- Step 3 -->
+<label class="group flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer select-none">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">3. Community Cleanup Drive</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">PENDING APPROVAL</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Mobilize citizen volunteer interdiction cohort for Saturday littoral sweep (Target: 350kg retrieval).
+              </span>
+</div>
+</label>
+</div>
+<!-- Direct Action Trigger -->
+<button class="w-full flex items-center justify-center gap-2.5 py-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-sm" id="btn-notify-squad">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+<span>Notify Local Conservation Squad</span>
+</button>
+<div class="hidden p-3 rounded-lg bg-surface-container text-center font-label-sm text-label-sm text-primary transition-all" id="toast-message">
+          Squad dispatch beacon broadcasted to 48 Active Rangers in Sector 04-B.
+        </div>
+</div>
+<!-- Cryptographic Ledger Proof -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+            Cryptographic Integrity Proof
+          </span>
+<span class="font-data-mono text-[11px] text-tertiary">ECDSA Verified</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg font-data-mono text-[11px] text-on-surface-variant flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant/70">SHA-256 HASH:</span>
+<button class="text-secondary hover:underline" onclick="navigator.clipboard.writeText('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'); alert('Hash copied');">Copy</button>
+</div>
+<span class="text-on-surface font-semibold break-all">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+<div class="flex items-center justify-between pt-1 text-[10px] text-on-surface-variant/80 border-t border-surface-container">
+<span>TIMESTAMP: 2025-10-24T14:28:09.104Z</span>
+<span>BLOCK #214,892</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript for Toggles & Buttons -->
+<script>
+    (function initAuditScreen() {
+      // Spectral Toggle Handlers
+      const toggleBtns = document.querySelectorAll('.spectral-btn');
+      const boundingBox = document.getElementById('neural-bounding-box');
+      const spectralOverlay = document.getElementById('spectral-overlay-svg');
+      const img = document.getElementById('detection-image');
+
+      toggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          toggleBtns.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-xs');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-xs');
+          btn.classList.remove('text-on-surface-variant');
+
+          const mode = btn.dataset.mode;
+          if (mode === 'neural') {
+            boundingBox.style.opacity = '1';
+            spectralOverlay.style.opacity = '1';
+            img.style.filter = 'none';
+          } else if (mode === 'truecolor') {
+            boundingBox.style.opacity = '0';
+            spectralOverlay.style.opacity = '0';
+            img.style.filter = 'none';
+          } else if (mode === 'nir') {
+            boundingBox.style.opacity = '0.7';
+            spectralOverlay.style.opacity = '0.3';
+            img.style.filter = 'hue-rotate(180deg) contrast(1.2) saturate(1.4)';
+          }
+        });
+      });
+
+      // Conservation Squad Notification CTA micro-interaction
+      const notifyBtn = document.getElementById('btn-notify-squad');
+      const toast = document.getElementById('toast-message');
+      if (notifyBtn && toast) {
+        notifyBtn.addEventListener('click', () => {
+          notifyBtn.disabled = true;
+          notifyBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Transmitting Dispatch...</span>';
+          setTimeout(() => {
+            notifyBtn.classList.remove('bg-primary-container', 'hover:bg-primary');
+            notifyBtn.classList.add('bg-surface-container-highest', 'text-on-surface');
+            notifyBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] text-primary">check_circle</span><span>Squad Notified</span>';
+            toast.classList.remove('hidden');
+          }, 600);
+        });
+      }
+
+      // Bookmark / Save toggle
+      const saveBtn = document.getElementById('btn-save');
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          const icon = saveBtn.querySelector('.material-symbols-outlined');
+          const span = saveBtn.querySelector('span:last-child');
+          if (span.textContent === 'Saved') {
+            span.textContent = 'Save Detection';
+            icon.style.fontVariationSettings = "'FILL' 0";
+            icon.classList.remove('text-primary');
+          } else {
+            span.textContent = 'Saved';
+            icon.style.fontVariationSettings = "'FILL' 1";
+            icon.classList.add('text-primary');
+          }
+        });
+      }
+
+      // PDF Report download action
+      const pdfBtn = document.getElementById('btn-download-pdf');
+      if (pdfBtn) {
+        pdfBtn.addEventListener('click', () => {
+          pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-bounce">download</span><span>Generating PDF...</span>';
+          setTimeout(() => {
+            pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span><span>Download PDF Report</span>';
+            alert('Audit Report ESC-2025-9412 exported to cryptographic PDF format.');
+          }, 800);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

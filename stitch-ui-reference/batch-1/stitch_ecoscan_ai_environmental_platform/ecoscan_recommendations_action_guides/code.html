@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#88d982","tertiary-fixed-dim":"#68dba9","surface":"#e9ffed","surface-variant":"#d0e8d6","surface-bright":"#e9ffed","tertiary-container":"#007d57","error":"#ba1a1a","on-primary-container":"#cbffc2","primary-fixed":"#a3f69c","error-container":"#ffdad6","on-secondary-fixed-variant":"#004786","on-error-container":"#93000a","on-primary-fixed":"#002204","on-primary":"#ffffff","secondary-container":"#54a0fe","surface-container-lowest":"#ffffff","background":"#e9ffed","on-surface":"#0b1f14","on-tertiary-fixed-variant":"#005137","inverse-surface":"#213528","on-tertiary":"#ffffff","on-background":"#0b1f14","secondary-fixed-dim":"#a5c8ff","surface-tint":"#1b6d24","on-error":"#ffffff","primary-container":"#2e7d32","tertiary":"#006243","secondary":"#005faf","primary":"#0d631b","surface-container-low":"#e1fae7","inverse-on-surface":"#dff7e4","on-primary-fixed-variant":"#005312","on-tertiary-fixed":"#002114","outline":"#707a6c","on-secondary":"#ffffff","outline-variant":"#bfcaba","on-tertiary-container":"#bdffdc","inverse-primary":"#88d982","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c3a","on-surface-variant":"#40493d","surface-container-high":"#d6eedc","surface-container-highest":"#d0e8d6","surface-dim":"#c8e0ce","tertiary-fixed":"#85f8c4","on-secondary-container":"#003567","surface-container":"#dcf4e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","margin":"2rem","space-xs":"0.25rem","gutter":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem"},"fontFamily":{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"data-mono":["Space Mono"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight block">EcoScan</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Citizen Portal</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="upload-and-detect" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span>Upload &amp; Detect</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="detection-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Detection History</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm" data-path="recommendations-and-action-guides" href="#"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Action Guides</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="user-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span>User Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-1"><div class="bg-surface-container rounded-xl p-3.5 flex items-center gap-3"><div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div><div><div class="font-label-sm text-label-sm text-on-surface font-semibold">Local Station #402</div><div class="font-data-mono text-data-mono text-tertiary">Sensor Mesh Active</div></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Log Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 placeholder:text-on-surface-variant/70" placeholder="Search detections, environmental threats, guides..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden xl:flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-data-mono text-data-mono">AQI 28 (Good)</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-data-mono text-data-mono">Water pH 7.2 (Nominal)</span></div></div><div class="relative flex items-center"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button></div><div class="flex items-center gap-3 pl-3"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Elena Rostova</div><div class="font-label-sm text-label-sm text-tertiary">Citizen Ranger • Tier 2</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-gutter py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Banner / Editorial Header -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg lg:p-space-xl shadow-sm">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 bottom-0 w-64 h-64 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div class="max-w-3xl space-y-space-xs">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-data-mono text-data-mono uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Knowledge Hub • Tier-Validated v4.8
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">
+          Environmental Action Guides &amp; Threat Mitigation Manual
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Practical, science-backed guidance to combat plastic waste, water contamination, air pollution, and community ecological degradation.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<div class="bg-surface-container-lowest px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="font-data-mono text-data-mono text-tertiary font-semibold">100% Peer-Reviewed</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">UNEP / EPA Aligned</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-4 py-3 rounded-lg shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div>
+<div class="font-data-mono text-data-mono text-secondary font-semibold">32 Standard SOPs</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Citizen-Deployable</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Navigation Category Filter Pills -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+        Filtration Registry / Action Categories
+      </span>
+<span class="font-data-mono text-data-mono text-tertiary">Showing 8 Active Directives</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="categoryNav">
+<button class="category-btn active px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-primary-container text-on-primary shadow-sm transition-all flex items-center gap-2" onclick="filterCategory('all', this)">
+<span class="material-symbols-outlined text-[18px]">apps</span>
+<span>All Guides</span>
+</button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all flex items-center gap-2" onclick="filterCategory('plastic', this)">
+<span class="material-symbols-outlined text-[18px]">recycling</span>
+<span>Plastic Waste Management</span>
+</button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all flex items-center gap-2" onclick="filterCategory('water', this)">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+<span>Water Pollution Prevention</span>
+</button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all flex items-center gap-2" onclick="filterCategory('air', this)">
+<span class="material-symbols-outlined text-[18px]">air</span>
+<span>Air Pollution Control</span>
+</button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all flex items-center gap-2" onclick="filterCategory('circular', this)">
+<span class="material-symbols-outlined text-[18px]">all_inclusive</span>
+<span>Recycling &amp; Circular Economy</span>
+</button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all flex items-center gap-2" onclick="filterCategory('reporting', this)">
+<span class="material-symbols-outlined text-[18px]">crisis_alert</span>
+<span>Citizen Field Reporting</span>
+</button>
+</div>
+</section>
+<!-- Featured Hero Guide Card -->
+<section class="w-full">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-md group">
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[380px]">
+<!-- Imagery Section -->
+<div class="relative lg:col-span-6 overflow-hidden min-h-[260px] lg:min-h-full">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A pristine coastal shoreline with clear turquoise water meeting a lush green marine estuary, environmental volunteers conducting microplastic water sampling with modern analytical field equipment, soft morning lighting with natural chlorophyll and blue accents" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_mXNwhxKNVUY-cWtwPFcTxSMABMvE8EjYb_J9lBBSoLUhLin26qXb40VABHxcqesrXOxrkQ2i4Yr5kUgjllOJrTtip9yS2hZwLvfFWAbUCkTjxjoMNKYn2xl_sflNTRSYjdQl-wdnpWv0Borukh8BlVG4ScqOFu2xNTFwkcohZ0wJGRcwCabvxsyYVytYSiquqePjRK08EANqsjn0swoRRic7mcOvWAApAAEhG9uf')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent lg:hidden"></div>
+<div class="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-data-mono text-data-mono text-primary font-bold uppercase tracking-wider">Featured Directive</span>
+</div>
+<div class="absolute bottom-4 left-4 z-10 hidden lg:flex items-center gap-2 px-3 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">gps_fixed</span>
+            Lat: 34.0259° N • Lon: 118.7798° W (Watershed Basin 04)
+          </div>
+</div>
+<!-- Content Section -->
+<div class="lg:col-span-6 p-space-lg lg:p-space-xl flex flex-col justify-between bg-surface-container-lowest">
+<div class="space-y-space-md">
+<div class="flex flex-wrap items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+                Marine Ecology &amp; Watersheds
+              </span>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>6 min read</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>UNEP Guidelines</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight leading-tight group-hover:text-primary transition-colors">
+                Coastal &amp; Watershed Stewardship: The Field Guide to Eliminating Single-Use Polymers
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Step-by-step mitigation framework designed for coastal communities, municipal park volunteers, and citizen hydrologists. Covers rapid deployment of stormwater capture screens, micro-litter classification, and supply-chain intercept strategies.
+              </p>
+</div>
+<!-- Impact Telemetry Snippet -->
+<div class="grid grid-cols-3 gap-2 p-3 rounded-xl bg-surface-container-low">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Target Reduction</span>
+<span class="font-data-mono text-headline-sm text-primary font-bold">84.2%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Action Difficulty</span>
+<span class="font-data-mono text-headline-sm text-tertiary font-bold">Tier 1</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Verification</span>
+<span class="font-data-mono text-headline-sm text-secondary font-bold">Photo ML</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">
+                UN
+              </div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Dr. Sylvia Thorne</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Lead Hydrologist, Marine Protection Taskforce</div>
+</div>
+</div>
+<button class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary/90 transition-all shadow-sm flex items-center gap-2 cursor-pointer">
+<span>Read Full Guide</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Action Guides Grid -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Curated Action Modules</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Targeted protocols for instant citizen remediation and telemetry logging.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sort by:</span>
+<select class="bg-surface-container-lowest px-3 py-1.5 rounded-lg font-label-sm text-label-sm text-on-surface focus:outline-none cursor-pointer">
+<option>Highest Impact</option>
+<option>Lowest Barrier to Entry</option>
+<option>Fastest Completion</option>
+</select>
+</div>
+</div>
+<!-- The 8 Curated Cards in an Asymmetric Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter" id="guidesGrid">
+<!-- Card 1: Plastic - Class 1-7 Polymers -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="plastic">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up of organized clean resin recycling plastics with clear numbered triangular identification marks on translucent high density polyethylene and PET bottles clean white background with soft emerald studio illumination" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuRDxHULb39KGbLoan9tEKfDb1fw8FWxY0obYFAUA9lAvN0cFwl923MOIpV1sELyZmnR9F42pG1nw3OMMUhrJOy0kM53TTEQzttds9vflD88I8GwWgtjk-A_Uc1z_jsAbcnQwvGDJsyuHuv9CLLR-gSXsEC4M_lAc_mST_ftCC9KofzdnWbLPhhaJdzc3M98_iRkng07rUOWaLDDuXFGANktjlbUr274SxL5OXqCT4')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              PLASTICS-01
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">
+              Level: Basic
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">recycling</span>
+<span>Polymer Classification</span>
+<span>•</span>
+<span>4 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Proper Sorting of Class 1–7 Polymers
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Identify chemical resin codes, prevent batch cross-contamination, and maximize municipal secondary reprocessing value.
+            </p>
+</div>
+<!-- Visual Sorting Badges -->
+<div class="p-2.5 rounded-lg bg-surface-container-low space-y-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium block">Resin Code Matrix:</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-data-mono text-data-mono font-bold">#1 PETE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-data-mono text-data-mono font-bold">#2 HDPE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-data-mono text-data-mono">#3 PVC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-data-mono text-data-mono font-bold">#4 LDPE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-data-mono text-data-mono font-bold">#5 PP</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-error font-data-mono text-data-mono font-bold">#6 PS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-data-mono text-data-mono">#7 OTHER</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-primary font-semibold">98% Purity Target</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Plastic - Community Drop-off Bins -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="plastic">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Neat, organized modular urban neighborhood recycling collection station with clean signage, color coded green and blue bins in a solar lit public community plaza with potted trees" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoga6OD8o8YIWYX9T-GQYAhu6xDPWTwBnh5qpd5XC4l-KjqNChHLMAgJkUw5Otkt-btTsQzKAeI8tGN0qpub2BdSNL9_a544Fd_LTrN6r60Eqg3n_-GJHXdxanD4nsVDbyRNfI8CqiHX6yIOrGQ7g-k6E28_WpslVvp-vYG0y0BA1jtVpqTs_agjrq8gRTapLK5lw6-UcSxpw90s-Yng3Ovibzc6ax0dRKtSQe5RLe')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              PLASTICS-02
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">
+              SOP Toolkit
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">location_city</span>
+<span>Community Action</span>
+<span>•</span>
+<span>7 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              How to Establish Local Community Drop-off Bins
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Secure municipal permits, structure volunteer sorting schedules, and partner with regional closed-loop upcyclers.
+            </p>
+</div>
+<!-- Micro Checklist -->
+<div class="p-2.5 rounded-lg bg-surface-container space-y-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Permit Checklist &amp; GIS zoning</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Contamination-proof bin lid specs</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-tertiary font-semibold">Est. 1.2 Tons/Mo</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Water - Nitrate Runoff -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="water">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Agricultural buffer zone showing green riparian plant filters alongside a quiet natural waterway, clear shallow stream bed with telemetry sensor stick, crisp bright morning sun" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaA6g_gRmGbuGjq54Zf8x_G4mMIJTPfVicgE0LD0hcE15nQZgJrxpob2nR5cdjwlsZrysu5Zkbtl_5xwxT19h14HKcVK_0d6tRA58RlGze_Ickj8cByBeegU0L3jSofCqKnDMZrNDBUeVgGveaLkLSS1750ohdtY35Jhf6p8w3lIW3PeeUa9X83D3nzu8rPajCwlsS8xLdoXPK7A1F2NwI6V1VMCWTimeKzbSns6La')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              AQUA-01
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Telemetry
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">water</span>
+<span>Watershed Bio-Health</span>
+<span>•</span>
+<span>5 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Identifying Agricultural Nitrate &amp; Silt Runoff
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Recognize early signs of algal blooms, quantify dissolved turbidity, and trigger regional watershed protection alerts.
+            </p>
+</div>
+<!-- Mini Sparkline / Metric representation -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Critical Threshold</div>
+<div class="font-data-mono text-label-md text-error font-bold">&gt; 10 mg/L NO3-N</div>
+</div>
+<svg class="w-20 h-8 text-error" fill="none" viewbox="0 0 80 30">
+<path d="M0 25 Q 20 22 40 16 T 80 5" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="80" cy="5" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-secondary font-semibold">Water pH: 6.8 - 7.5</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Water - Household Chemicals -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="water">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Clean urban street gutter with high contrast storm drain opening, labeled with bright green stencil fish logo indicating ocean drainage, clear clean rainwater without foam or oils" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMklht-QYrr-dFFAHUyGI8tyTBMP8uln0H_f6IP2fM_PXY7WthZWCCOfzjFWq9QZAyZqvKoFMWKIEg54TU1gDPZU8ERrTKxUoZ1A776RvFOjUhlubczagY1e3Ko0iOyZS_F2Jm0r9ia_PRn5kkPBvUxMDPM_6mfLpPt2ydra4IZlLt5w6kUViy5beP-O-29Hk2aScvxI5uVR98lCIQCwoY5kWcCgMAPjMaoLsP34C2')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              AQUA-02
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">
+              Citizen Safe
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">water_damage</span>
+<span>Urban Drainage</span>
+<span>•</span>
+<span>3 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Preventing Household Chemical Disposal into Storm Drains
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Safe neutralization protocols for solvent, oil, and surfactant residues before they contaminate municipal aquifer outlets.
+            </p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high/60 space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Zero-Runoff Equivalents:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Plant-based citric cleaners, sand-trap oil absorbents.</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-primary font-semibold">100% Aquifer Safe</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Card 5: Air - PM2.5 & VOCs -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="air">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Technical digital optical sensor measuring air particulate density, sleek white hand held ambient air monitor device displaying laser scattering telemetry outdoors under blue sky with botanical backdrop" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDy1aTo3dYOfGHCA2RhekRmzrL8dHP65l4NyUMQvaRwGjNu4ydwnurkQdChhOpCuEIVhiHzD5rKmheQzcyay7w0qhS7PFULVQmTlGchIcDXQr7jTE6SN38UCuy8a25ghjr8TzRDUfbZSVbKPWOPKmbuJ6uqtL6zI21Y8Q2FxLs8uzqSCTXN_2Mqmc2SQAJV5wi5WgRRR4SVrAUaNe4whm10WLiJR1gRGmYyrs_qP3bg')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              AERO-01
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+              High Hazard
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-error">air</span>
+<span>Atmospheric Sensors</span>
+<span>•</span>
+<span>6 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Understanding PM2.5 &amp; Volatile Organic Compounds (VOCs)
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Optical sensing basics, interpreting particulate spikes, and implementing domestic HEPA micro-filtration barriers.
+            </p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Max Recommended</div>
+<div class="font-data-mono text-label-md text-on-surface font-bold">&lt; 12.0 µg/m³</div>
+</div>
+<div class="px-2.5 py-1 rounded bg-surface-container text-tertiary font-data-mono text-data-mono font-bold">
+              Laser Optic Calibrated
+            </div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-primary font-semibold">AQI Index Ready</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Card 6: Air - Burning & Flaring Reporting -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="air">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Distant plume of dark agricultural smoke rising against a golden afternoon rural skyline, seen through a modern citizen ranger tablet screen overlaying timestamp and GPS telemetry coordinates" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOyR-SP6G2Sv6xJbPMVYq_tntBIqQl4EIhtTDgH5kOx_j4SRIKPhliplSMunbhT0zqnYLvC69XztDSEJ40AkLRgXoO-3Cwb2lRZLiWqFz_hmeLL1tQrgOfnQ3wl-vXHUcM2QTxflMDLFbtLmLMWb1pG0zRJbZlHvbM4Tm2wGOM7MiUNjYD3E1kRG93NZ-XAB7uR2vyBXWQ_yoSU0LHwRni4a__q1PU5ki1xOO-JI9k')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              AERO-02
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+              Enforcement
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">report_problem</span>
+<span>Regulatory Chain</span>
+<span>•</span>
+<span>4 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Reporting Unauthorized Agricultural Burning &amp; Flaring
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Chain of custody evidentiary photo logging, wind trajectory calculation, and dispatching fast alerts to local environmental agencies.
+            </p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container space-y-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary">navigation</span>
+<span>Automated Bearing Calculation</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary">photo_camera</span>
+<span>Metadata &amp; EXIF Validation</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-tertiary font-semibold">Avg Response: 42m</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Card 7: Circular - Microplastic Mitigation -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="circular">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Precision macro photography of a modern high grade microplastic mesh filter trapping synthetic microfiber strands from washing effluent clean technical detail with soft emerald backlighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAX0UiXNOYeXyyuVIrjNw9MtIbtd6whzz2mj0MB8fCq3p-LZF5BQ5bbfn5OFYocvfZQp4Y4hlRib_yuyvOnX40lLP9hoFJ5qaMOuUrN78uN4siI7pmxKmxKSK_X_cGJDbGz1jo7Gp1sZy0hbqQ4Ujv7UuNFcheeaN8nI3H5xEeFpgdPAhuZ43T19iND6ZDEV1f-sFMypf-568rfuhCXQ2ylSzeklZsyZB_j-cdCOCSn')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              CIRC-01
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+              Domestic
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">filter_alt</span>
+<span>Microfiber Intercept</span>
+<span>•</span>
+<span>5 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Microplastic Mitigation in Domestic Washing Machines
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Retrofit inline 50-micron filtration units, optimize wash cycles, and divert billions of shedding polyester fibers from the ocean.
+            </p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Capture Rate</span>
+<span class="font-data-mono text-label-md text-primary font-bold">~700,000 fibers/wash</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-primary font-semibold">78% Stream Clean</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- Card 8: Circular - Decentralized Composting -->
+<article class="guide-card flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all" data-category="circular">
+<div class="space-y-space-sm">
+<div class="relative h-44 w-full rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Rich dark organic aerobic compost soil with fresh green sprouts growing, hands of an urban community gardener holding fertile black earth in warm natural sunlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUTLpUc9p7MBRmimAUnV2t6FK9pGJk-ECaKzL8_rvISlkTcvdTQ9E_lShzUvnOSZY0S_P5pQ-KRZxfDzCw_DcRBVDX7mLo3ICvc0tjop-dxFlADjfyOuO2uilUImB2NORUU2OPLFyCs4Iy-wLXEQKLqInCwphzUhvlhFy-4dq3DJGf8QIwmCWt7snKld1hSyNEv1k8oRXgCySx5f-lasKQEwwq6G_7uCInDfjjaPt_')"></div>
+<div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-data-mono text-data-mono font-semibold">
+              CIRC-02
+            </div>
+<div class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">
+              Zero Methane
+            </div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">compost</span>
+<span>Soil Regeneration</span>
+<span>•</span>
+<span>8 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+              Decentralized Composting &amp; Bio-Waste Separation
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Maintain optimal 30:1 Carbon-to-Nitrogen ratios, prevent anaerobic odor generation, and enrich municipal community gardens.
+            </p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Thermal Cycle:</span>
+<span class="font-data-mono text-primary font-bold">55°C–65°C Target</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-tertiary font-semibold">-420 kg CO2e/Ton</span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Environmental Awareness & Local NGO Directory -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+<div>
+<div class="inline-flex items-center gap-2 font-data-mono text-data-mono text-primary uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">public</span>
+          Direct Action Registry
+        </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+          Partner Campaigns &amp; Ecological Depots
+        </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        Connect directly with certified grassroots coalitions and geo-verified recycling centers within your telemetry radius.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- NGO Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">waves</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+              Active Initiative
+            </span>
+</div>
+<div class="space-y-1">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Watershed Alliance Pacific</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">River Basin Cleanse &amp; Silt Barrier Deploy</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Mobilizing 120 citizen monitors along the lower estuary to establish bio-filter swales and register microplastic telemetry data.
+            </p>
+</div>
+<div class="space-y-2 pt-2">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">calendar_today</span>
+<span>Saturday, Oct 28 • 08:30 - 13:00</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">location_on</span>
+<span>San Gabriel Estuary Pier 4 (Sector C)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md space-y-2">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Ranger Quota: 86/100 Filled</span>
+<span class="font-data-mono text-primary font-semibold">86%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 86%"></div>
+</div>
+<button class="w-full mt-3 py-2.5 px-4 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm" onclick="handleJoinCampaign(this)">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Join Upcoming Campaign</span>
+</button>
+</div>
+</div>
+<!-- NGO Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">electric_bolt</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+              Drop-off Depot
+            </span>
+</div>
+<div class="space-y-1">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Urban Circularity Coalition</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lithium &amp; Polymer Advanced Recovery Hub</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Municipal certified depot handling high-hazard chemical batteries, household solvent recyclables, and rigid Class 5 PP plastics.
+            </p>
+</div>
+<div class="space-y-2 pt-2">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span>Mon - Fri • 07:00 - 18:00 (Drive-thru)</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">distance</span>
+<span>2.4 miles away • Station Mesh #402</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md space-y-2">
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Citizen Impact Credit:</div>
+<span class="font-data-mono text-data-mono text-primary font-bold">+45 EcoScore / drop</span>
+</div>
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Get Routing Directions</span>
+</button>
+</div>
+</div>
+<!-- NGO Card 3: Interactive Location & Field Mission -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[28px]">forest</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+              Reforest Team
+            </span>
+</div>
+<div class="space-y-1">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Bio-Canopy Institute</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Urban Micro-Forest Soil Remediation Sprint</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Rapid planting of native hyperaccumulating shrubs to extract industrial heavy metals and revitalize urban soil microbiota.
+            </p>
+</div>
+<!-- Map Component -->
+<div class="w-full h-28 bg-cover bg-center rounded-lg relative overflow-hidden shadow-inner" data-location="Los Angeles River Greenway Trail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDrz-Nk46Ap74AjEsXKmE-tMMTYVCYCJXqUu9NX6NAvLg6Sk6n3ySVSTR02Zi1uMDufriD1OPsZem_JOfvh1ANh4Af4ASGqF4PoQWxGO3deqZJ4pDJjxzJB1lZWlyZLA2FqEpyHlqWLM4IJO8lyxf3hDqnYfiWpJRGw5ZEEpDpDz-4qCx80vAsivf_MRKEjZ4Xg7DIuMPChJwFAIq5ARiywQ07pYmZVLCDzLEVRs30')">
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-data-mono text-data-mono">
+              LA Greenway Sec 14
+            </div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-2.5 px-4 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm" onclick="handleJoinCampaign(this)">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+<span>Join Upcoming Campaign</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Action Citizen Download Manual Banner -->
+<section class="rounded-xl bg-inverse-surface text-inverse-on-surface p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">menu_book</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold">
+          Download Field Reference Card (PDF / Offline Version)
+        </h4>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80">
+          Compact field guide formatted for weather-sealed pocket lamination. Contains quick chemical test strip chart and emergency hotline listings.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto flex-shrink-0">
+<button class="w-full md:w-auto px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Offline Kit (4.2 MB)</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  function filterCategory(cat, btn) {
+    // Update button states
+    const buttons = document.querySelectorAll('.category-btn');
+    buttons.forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+    });
+
+    btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+    btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+
+    // Filter card list
+    const cards = document.querySelectorAll('#guidesGrid > article');
+    cards.forEach(card => {
+      if (cat === 'all' || card.getAttribute('data-category') === cat) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function handleJoinCampaign(btn) {
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> Joined • Slot Reserved';
+    btn.classList.remove('bg-primary', 'hover:bg-primary/90');
+    btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+    btn.disabled = true;
+  }
+</script></main></div></body></html>

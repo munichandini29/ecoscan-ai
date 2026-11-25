@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#88d982","tertiary-fixed-dim":"#68dba9","surface":"#e9ffed","surface-variant":"#d0e8d6","surface-bright":"#e9ffed","tertiary-container":"#007d57","error":"#ba1a1a","on-primary-container":"#cbffc2","primary-fixed":"#a3f69c","error-container":"#ffdad6","on-secondary-fixed-variant":"#004786","on-error-container":"#93000a","on-primary-fixed":"#002204","on-primary":"#ffffff","secondary-container":"#54a0fe","surface-container-lowest":"#ffffff","background":"#e9ffed","on-surface":"#0b1f14","on-tertiary-fixed-variant":"#005137","inverse-surface":"#213528","on-tertiary":"#ffffff","on-background":"#0b1f14","secondary-fixed-dim":"#a5c8ff","surface-tint":"#1b6d24","on-error":"#ffffff","primary-container":"#2e7d32","tertiary":"#006243","secondary":"#005faf","primary":"#0d631b","surface-container-low":"#e1fae7","inverse-on-surface":"#dff7e4","on-primary-fixed-variant":"#005312","on-tertiary-fixed":"#002114","outline":"#707a6c","on-secondary":"#ffffff","outline-variant":"#bfcaba","on-tertiary-container":"#bdffdc","inverse-primary":"#88d982","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c3a","on-surface-variant":"#40493d","surface-container-high":"#d6eedc","surface-container-highest":"#d0e8d6","surface-dim":"#c8e0ce","tertiary-fixed":"#85f8c4","on-secondary-container":"#003567","surface-container":"#dcf4e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","margin":"2rem","space-xs":"0.25rem","gutter":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem"},"fontFamily":{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"data-mono":["Space Mono"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight block">EcoScan</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Citizen Portal</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="upload-and-detect" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span>Upload &amp; Detect</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="detection-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Detection History</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="recommendations-and-action-guides" href="#"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Action Guides</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="user-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span>User Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-1"><div class="bg-surface-container rounded-xl p-3.5 flex items-center gap-3"><div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div><div><div class="font-label-sm text-label-sm text-on-surface font-semibold">Local Station #402</div><div class="font-data-mono text-data-mono text-tertiary">Sensor Mesh Active</div></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Log Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 placeholder:text-on-surface-variant/70" placeholder="Search detections, environmental threats, guides..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden xl:flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-data-mono text-data-mono">AQI 28 (Good)</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-data-mono text-data-mono">Water pH 7.2 (Nominal)</span></div></div><div class="relative flex items-center"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button></div><div class="flex items-center gap-3 pl-3"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Elena Rostova</div><div class="font-label-sm text-label-sm text-tertiary">Citizen Ranger • Tier 2</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-gutter py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Biotope Status & Welcome Header Banner -->
+<section class="relative w-full rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden p-space-lg">
+<!-- Atmospheric Ambient Glow Element -->
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-primary-fixed/30 via-tertiary-fixed/20 to-transparent blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-80 h-80 rounded-full bg-secondary-fixed/25 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-tertiary font-data-mono text-data-mono font-medium">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            LIVE TELEMETRY NODE
+          </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Sector 04-B Coastal Basin</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">
+          Welcome back, <span class="text-primary font-bold">Elena!</span>
+</h1>
+<!-- Biotope Bar -->
+<div class="flex flex-wrap items-center gap-3 pt-1 text-on-surface-variant">
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-xl">
+<span class="material-symbols-outlined text-[18px] text-primary">air</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Air Quality:</span>
+<span class="font-data-mono text-data-mono font-bold text-primary">AQI 38 (Good)</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-xl">
+<span class="material-symbols-outlined text-[18px] text-secondary">water_drop</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Water Index:</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">Nominal (pH 7.3)</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-xl">
+<span class="material-symbols-outlined text-[18px] text-tertiary">nest_clock_farsight_analog</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Last Synchronized: 4m ago</span>
+</div>
+</div>
+</div>
+<!-- Quick Action CTA -->
+<div class="flex items-center gap-3 self-stretch xl:self-auto">
+<a class="relative group w-full xl:w-auto inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm font-semibold shadow-lg hover:bg-primary transition-all duration-200" data-path="upload-and-detect" href="#">
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-primary-fixed-dim"></span>
+</span>
+<span class="material-symbols-outlined text-[24px]">add_photo_alternate</span>
+<span>Upload &amp; Detect Threat</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 4 Statistics KPI Cards -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1: Total Scans -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Telemetry Activity</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Total Scans</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">document_scanner</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface">24</div>
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold bg-surface-container-low px-2 py-1 rounded-md">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+3 this week</span>
+</div>
+</div>
+<!-- Sparkline Inline SVG -->
+<div class="mt-4 pt-3 flex items-center gap-2">
+<svg class="w-full h-7 text-primary stroke-current fill-none stroke-2" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,18 Q15,22 30,12 T60,14 T85,4 L100,6"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 2: Verified Threats -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Model Confidence</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Verified Threats</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface">19</div>
+<div class="font-data-mono text-data-mono text-tertiary font-bold bg-surface-container-low px-2 py-1 rounded-md">
+          79% AI Conf Avg
+        </div>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2">
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 79%;"></div>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">79%</span>
+</div>
+</div>
+<!-- Metric 3: Impact Points -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Reputation Ledger</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Impact Credits</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface">1,450</div>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold">EcoCredits</span>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2 bg-surface-container-low p-2 rounded-xl">
+<span class="material-symbols-outlined text-[18px] text-primary">shield</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Rank: Eco Guardian Lvl 3</span>
+</div>
+</div>
+<!-- Metric 4: Field Actions -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Intervention Feed</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Field Actions</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">handshake</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface">2</div>
+<div class="font-label-sm text-label-sm text-primary font-bold bg-surface-container-low px-2 py-1 rounded-md">
+          Resolved
+        </div>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">volunteer_activism</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Actioned by Local NGOs</span>
+</div>
+</div>
+</section>
+<!-- Main Split Layout: Telemetry History Table + Community Goal / Radar -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column (8 cols): Recent Detections List -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Recent Detections</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High-fidelity edge computer vision detections logged from your client device</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high transition-colors">Filter All</button>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-primary hover:bg-surface-container transition-colors flex items-center gap-1 font-semibold" data-path="detection-history" href="#">
+<span>Full Archive</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Detection Items -->
+<div class="flex flex-col gap-space-md">
+<!-- Item 1: High Severity -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 relative bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of marine plastic flotsam and abandoned nylon fishing nets entangled on an estuary shoreline with muddy silt water and green mangrove roots in bright overcast daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6xfWfAnTZZLKiFK5AE0kbLJxoOdIEbB1AHUBw_cf28MW8WVa-AsScXfnOkxqQW7Q0XZuY2Djnd0Pv-ZbBpExLvGVsqXOS05XzAvr2O51UcNfpx3jQRi7afh6z2BVdPxdw6-w2lqrq0bCUUbI8WhAfQS7L4o0CnZ7kVFXfEBOiJ3qjLy-iNkl55A2pDPaSduzvTN0xj7v7YOVWDawcKSNCf-WphwuhPScVqUY7HtJj"/>
+<span class="absolute bottom-1 right-1 bg-surface-dim/90 px-1 rounded font-data-mono text-[10px] text-on-surface">RAW</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<!-- Severity High Capsule -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FEF2F2] text-[#B91C1C] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B91C1C]"></span>
+                    HIGH SEVERITY
+                  </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant font-medium">98.7% Conf</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Marine Plastic Flotsam</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant mt-1 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="truncate">Sector 04-B Estuary</span>
+<span class="mx-1">•</span>
+<span class="text-tertiary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">send</span> Dispatched to GreenEarth Alliance
+                  </span>
+</div>
+</div>
+</div>
+<!-- Actions Group -->
+<div class="flex items-center gap-2 shrink-0 md:self-center self-end">
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface flex items-center justify-center transition-colors" title="Download PDF Telemetry">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-colors flex items-center gap-1">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Medium Severity -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 relative bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Agricultural fertilizer runoff churning yellow-brown cloudy chemical froth entering a canal waterway lined with reeds and green wetland shrubs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPLcikiXoEsoMUDxEGYItTrKAI_S-lJVB2NqpsYcIB26-3YPJhcA7eCeW2I14EW3ZjnY0jBs0dNZxCnu1SVJ-MN9R86pmZXqf3pqpCiOol5J55xtX9Iickz2S2kvA5z5axmM0bFJTI7pYo5apxt8Tcily3iVYsB3RCjYT2KpO2ZQ5TrvoIes9DX8Ie_SJ-QtdHWQC-xoYkOL7FeRmD4JIIo_9-6jBZcFDtQp35s7Qa"/>
+<span class="absolute bottom-1 right-1 bg-surface-dim/90 px-1 rounded font-data-mono text-[10px] text-on-surface">RAW</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<!-- Severity Med Capsule -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FFFBEB] text-[#B45309] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B45309]"></span>
+                    MEDIUM SEVERITY
+                  </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant font-medium">92.4% Conf</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Silt &amp; Fertilizer Runoff</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant mt-1 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="truncate">Periyar Lake Canal</span>
+<span class="mx-1">•</span>
+<span class="text-[#B45309] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">hourglass_top</span> In Triage
+                  </span>
+</div>
+</div>
+</div>
+<!-- Actions Group -->
+<div class="flex items-center gap-2 shrink-0 md:self-center self-end">
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface flex items-center justify-center transition-colors" title="Download PDF Telemetry">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-colors flex items-center gap-1">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Low Severity -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 relative bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Macro view of colorful microplastic beads and plastic nurdles scattered along tidal sand on a sunlit beach cove with foam bubbles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EqHXcSMHR81Yp2muL166pht6EWd67xDCYV2wlKXsvDZH79Ke_eZZcggmlvF_0huhXGO8VfkRi1NtegRVZmqkb3KsIzH78Es6BjK6Kfv4EhivSZy7U70zLAOZPMUxnkEydhTqAews18NruNROT_3fP10MJRg8X3Fh_DxPLj2hXqZeZgJ0GoGchv5flX5ST9cN0lrw8CJjcNjggtHNKDIvK_ROjZtKPMthbYdY467o"/>
+<span class="absolute bottom-1 right-1 bg-surface-dim/90 px-1 rounded font-data-mono text-[10px] text-on-surface">RAW</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<!-- Severity Low Capsule -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#ECFDF5] text-[#059669] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#059669]"></span>
+                    LOW SEVERITY
+                  </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant font-medium">89.1% Conf</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Microplastics Contamination</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant mt-1 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="truncate">Sandy Cove Intertidal Zone</span>
+<span class="mx-1">•</span>
+<span class="text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">check_circle</span> Verified
+                  </span>
+</div>
+</div>
+</div>
+<!-- Actions Group -->
+<div class="flex items-center gap-2 shrink-0 md:self-center self-end">
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface flex items-center justify-center transition-colors" title="Download PDF Telemetry">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-colors flex items-center gap-1">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (4 cols): Community Impact Milestone & Biotope Map Status -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Community Impact Summary Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">public</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Regional Milestone</h3>
+</div>
+<span class="font-data-mono text-data-mono text-tertiary font-semibold">OCTOBER</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Progress toward the Sector 04 monthly watershed restoration &amp; plastic extraction objective.
+        </p>
+<!-- Donut / Arc Progress Meter Representation -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-4">
+<div class="relative w-20 h-20 shrink-0 flex items-center justify-center">
+<!-- Inline SVG Circle Progress -->
+<svg class="w-20 h-20 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="74, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-data-mono text-headline-sm font-bold text-on-surface leading-none">74%</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">3,700 / 5,000 kg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Waste neutralized to date</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-1 font-semibold">6 days remaining</span>
+</div>
+</div>
+<!-- Ranger Contribution -->
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-1">
+<span class="text-on-surface-variant">Your Sector Contribution:</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">148.5 kg (3.9%)</span>
+</div>
+</div>
+<!-- Sector Map Preview Widget -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">radar</span>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Mesh Node Map</h4>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="w-full h-44 rounded-xl bg-cover bg-center relative overflow-hidden flex items-end p-3 shadow-inner" data-location="Coastal Basin, Sector 04-B" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdbfA98HoMA9NB95M7eZrM7fl4TkHI9WN0GLr4JWZoNpAd-fL3yEgdAzgFVfUaL6T2jeR6zVaOt4wp-Qs7oQreLKPPk626AcZ4_758lIDqpOmmZt0bczwG3iaAelAsSKIjI5cciOKoTjX3BiUeDNJLFRg9sxzzrH4_ixhiVKKKYJ34fudaveBMLLIDfc5s_voiA9j7X4pdqqbSQvmMdwOIxA3gcrZioscKTgH4moal')">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between w-full text-inverse-on-surface">
+<div>
+<div class="font-label-sm text-label-sm font-semibold">Active Mesh Sector</div>
+<div class="font-data-mono text-[11px] text-tertiary-fixed-dim">Lat 12.981 • Long 80.245</div>
+</div>
+<a class="px-2.5 py-1 rounded bg-surface/90 text-on-surface text-label-sm font-label-sm font-semibold hover:bg-surface-container transition-colors" data-path="dashboard" href="#">
+              Expand
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Environmental Tips & Daily Eco-Guidance Section -->
+<section class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">lightbulb</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Daily Eco-Guidance &amp; Citizen Protocols</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified field playbooks curated for your biotope sector profile</p>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold hover:underline inline-flex items-center gap-1" data-path="recommendations-and-action-guides" href="#">
+<span>Browse all 18 guides</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Interactive Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Guide Card 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">recycling</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">Protocol #08</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">Reducing Single-Use Coastal Plastics</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Transitioning local household packaging to organic polylactic resins, reducing micro-flotsam entering storm drains by up to 60%.
+          </p>
+</div>
+<div class="pt-4 mt-2">
+<button class="w-full py-2 px-3 rounded-xl bg-surface-container-low text-primary font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors flex items-center justify-between">
+<span>Read Step-by-Step</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</div>
+<!-- Guide Card 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">flag</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Protocol #14</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">Reporting Illegal Chemical Discharges</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            How to safely log photo evidence and GPS metadata without compromising personal safety or disturbing hazardous benthic sediment.
+          </p>
+</div>
+<div class="pt-4 mt-2">
+<button class="w-full py-2 px-3 rounded-xl bg-surface-container-low text-secondary font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors flex items-center justify-between">
+<span>View Protocol</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</div>
+<!-- Guide Card 3 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-tertiary-container group-hover:bg-tertiary-container group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[26px]">water</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">Telemetry Guide</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">Checking Local Runoff Indices</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Understand nitrogen and turbidity indices before and after heavy rainfall events along Periyar Basin agricultural zones.
+          </p>
+</div>
+<div class="pt-4 mt-2">
+<button class="w-full py-2 px-3 rounded-xl bg-surface-container-low text-tertiary font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors flex items-center justify-between">
+<span>Open Runoff Index</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div></main></div></body></html>

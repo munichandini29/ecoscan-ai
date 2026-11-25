@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#88d982","inverse-surface":"#213528","tertiary-fixed":"#85f8c4","secondary":"#005faf","error":"#ba1a1a","inverse-on-surface":"#dff7e4","on-tertiary-fixed-variant":"#005137","on-primary":"#ffffff","error-container":"#ffdad6","surface-dim":"#c8e0ce","surface-bright":"#e9ffed","on-secondary-container":"#003567","surface-container-low":"#e1fae7","on-secondary-fixed":"#001c3a","primary":"#0d631b","surface-container-lowest":"#ffffff","tertiary-fixed-dim":"#68dba9","tertiary-container":"#007d57","on-primary-fixed":"#002204","background":"#e9ffed","tertiary":"#006243","on-tertiary-fixed":"#002114","primary-fixed":"#a3f69c","outline-variant":"#bfcaba","on-secondary":"#ffffff","surface-tint":"#1b6d24","secondary-fixed-dim":"#a5c8ff","outline":"#707a6c","surface-container-highest":"#d0e8d6","on-tertiary":"#ffffff","surface-variant":"#d0e8d6","primary-fixed-dim":"#88d982","primary-container":"#2e7d32","surface-container":"#dcf4e1","on-surface":"#0b1f14","on-background":"#0b1f14","on-tertiary-container":"#bdffdc","surface":"#e9ffed","on-surface-variant":"#40493d","secondary-fixed":"#d4e3ff","on-primary-container":"#cbffc2","on-secondary-fixed-variant":"#004786","on-error-container":"#93000a","secondary-container":"#54a0fe","on-error":"#ffffff","on-primary-fixed-variant":"#005312","surface-container-high":"#d6eedc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","gutter-mobile":"1rem","gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem","space-xl":"2rem"},"fontFamily":{"label-sm":["Inter"],"data-mono":["Space Mono"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"display-lg":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(26,46,34,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_1px_3px_rgba(26,46,34,0.08)]"><span class="material-symbols-outlined text-[24px]">radar</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">EcoScan AI</span><span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider uppercase">NGO Operations</span></div></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_1px_3px_rgba(26,46,34,0.04)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold shadow-[0_1px_3px_rgba(26,46,34,0.04)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-label-md text-label-md">Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="environmental-map" href="#"><span class="material-symbols-outlined text-[20px]">public</span><span class="font-label-md text-label-md">Environmental Map</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-label-md text-label-md">Analytics</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="community-campaigns" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-md text-label-md">Community Campaigns</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">4</span></a></nav><div class="mt-space-md mb-space-sm px-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Management &amp; Account</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_1px_3px_rgba(26,46,34,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">shield_person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Telemetry Sync</span></div><span class="font-data-mono text-data-mono text-primary">99.8%</span></div><div class="flex items-center justify-between pt-1 px-1"><span class="font-data-mono text-data-mono text-outline">v2.4.1 NGO-OS</span><a class="flex items-center gap-1 font-label-sm text-label-sm text-error hover:text-on-surface transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[16px]">logout</span><span>Log Out</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(26,46,34,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full max-w-md"><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-outline"><span class="material-symbols-outlined text-[18px]">search</span></div><input class="w-full pl-9 pr-14 py-2 bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" placeholder="Search sensor networks, telemetry alerts, zones..." type="text"/><div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none"><kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-data-mono text-[10px]">⌘K</kbd></div></div><div class="hidden xl:flex items-center gap-2"><button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-container">filter_list</span><span>Air Quality</span></button><button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span><span>Water Basin</span></button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low shadow-[0_1px_3px_rgba(26,46,34,0.04)]"><span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-ping"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Grid Live</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="px-3.5 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-[0_1px_3px_rgba(26,46,34,0.12)] hover:bg-primary transition-all active:scale-95" type="button"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>New Dispatch</span></button><div class="flex items-center gap-space-sm pl-2"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">GreenEarth Alliance</span><span class="font-data-mono text-data-mono text-primary text-[11px]">NGO Partner #04</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-surface-container-high"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full p-space-lg space-y-space-lg max-w-[1440px] mx-auto">
+<!-- Welcome & Organization Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-gradient-to-br from-tertiary-fixed-dim/20 to-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface font-data-mono text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Mesh Telemetry Synced • 12 Active Squads • Sector 04-A</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Welcome back, <span class="text-primary font-bold">GreenEarth Alliance</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Real-time ecological incident telemetry, citizen dispatches, and automated biotope threat interdictions.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-2.5">
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-sm hover:bg-primary transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">emergency_share</span>
+<span>+ Initiate Field Dispatch</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cell_tower</span>
+<span>Live Stream</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">campaign</span>
+<span>Alert</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Audit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Critical Emergency Alert Banner -->
+<div class="rounded-xl bg-gradient-to-r from-error-container via-surface-container-lowest to-surface-container-lowest p-space-md shadow-md flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-error text-on-error flex items-center justify-center shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-bold">Critical Incident #TK-902</span>
+<span class="font-data-mono text-[11px] text-outline">ESTUARY DELTA 04-B</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+          Chemical effluent discharge detected at Sector 04-B Estuary • 3 bio-containment squads on-site.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-3.5 py-1.5 rounded-lg bg-error text-on-error font-label-sm text-label-sm font-semibold hover:opacity-90 transition-opacity" type="button">
+        View Live Stream
+      </button>
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Top KPI Statistics Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Reports Logged</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">dataset</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-headline-xl text-on-surface font-bold leading-none tracking-tight">1,842</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-surface-container text-primary font-data-mono text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span>+18.4%
+          </span>
+<span class="font-body-sm text-body-sm text-outline">vs past cycle</span>
+</div>
+</div>
+<div class="h-10 w-full pt-1">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0 18 Q 20 6, 40 14 T 80 4 L 100 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0 18 Q 20 6, 40 14 T 80 4 L 100 10 L 100 24 L 0 24 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">High Severity Cases</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">crisis_alert</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-headline-xl text-error font-bold leading-none tracking-tight">47</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-error-container text-error font-data-mono text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">arrow_downward</span>-12%
+          </span>
+<span class="font-body-sm text-body-sm text-outline">response velocity</span>
+</div>
+</div>
+<div class="h-10 w-full pt-1">
+<svg class="w-full h-full text-error" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0 6 Q 25 20, 50 12 T 100 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0 6 Q 25 20, 50 12 T 100 8 L 100 24 L 0 24 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active In-Triage</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-headline-xl text-on-surface font-bold leading-none tracking-tight">128</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-data-mono text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>9 squad queues
+          </span>
+<span class="font-body-sm text-body-sm text-outline">in inspection</span>
+</div>
+</div>
+<div class="h-10 w-full pt-1">
+<svg class="w-full h-full text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0 14 Q 30 18, 60 8 T 100 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0 14 Q 30 18, 60 8 T 100 16 L 100 24 L 0 24 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Resolved Interdictions</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline justify-between">
+<span class="font-display-lg text-headline-xl text-primary font-bold leading-none tracking-tight">1,667</span>
+<span class="font-data-mono text-data-mono text-primary font-semibold">90.5%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 90.5%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-data-mono text-[11px] pt-1">
+<span>Target: 88.0%</span>
+<span class="text-primary font-semibold">+2.5% over KPI</span>
+</div>
+</div>
+</div>
+<!-- Interactive Data Visualizations & Analytics Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Area Trend: Citizen Dispatches vs Field Interdictions (7 cols) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Citizen Reports vs Interdictions</h2>
+<p class="font-body-sm text-body-sm text-outline">Daily intake volume and resolved containment (30 days)</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span>Reports</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Interdictions</span>
+</div>
+</div>
+</div>
+<!-- Area Chart SVG -->
+<div class="w-full h-56 pt-2">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 600 200">
+<defs>
+<lineargradient id="primaryArea" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#0d631b" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#0d631b" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="secondaryArea" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#005faf" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#005faf" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#e1fae7" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="600" y1="40" y2="40"></line>
+<line stroke="#e1fae7" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="600" y1="90" y2="90"></line>
+<line stroke="#e1fae7" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="600" y1="140" y2="140"></line>
+<line stroke="#dcf4e1" stroke-width="1" x1="0" x2="600" y1="190" y2="190"></line>
+<!-- Primary Curve (Citizen Reports) -->
+<path d="M0 130 C 50 120, 90 60, 140 70 C 190 80, 230 40, 280 45 C 330 50, 370 95, 420 85 C 470 75, 520 25, 600 35 L 600 190 L 0 190 Z" fill="url(#primaryArea)"></path>
+<path d="M0 130 C 50 120, 90 60, 140 70 C 190 80, 230 40, 280 45 C 330 50, 370 95, 420 85 C 470 75, 520 25, 600 35" stroke="#0d631b" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Secondary Curve (Interdictions) -->
+<path d="M0 160 C 50 145, 90 100, 140 110 C 190 120, 230 70, 280 80 C 330 90, 370 120, 420 105 C 470 95, 520 50, 600 55 L 600 190 L 0 190 Z" fill="url(#secondaryArea)"></path>
+<path d="M0 160 C 50 145, 90 100, 140 110 C 190 120, 230 70, 280 80 C 330 90, 370 120, 420 105 C 470 95, 520 50, 600 55" stroke="#005faf" stroke-linecap="round" stroke-width="2"></path>
+<!-- Data Points -->
+<circle cx="280" cy="45" fill="#0d631b" r="4" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="280" cy="80" fill="#005faf" r="4" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="600" cy="35" fill="#0d631b" r="4" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-outline font-data-mono text-[11px] pt-1">
+<span>Day 01</span>
+<span>Day 07</span>
+<span>Day 15</span>
+<span>Day 22</span>
+<span class="text-primary font-semibold">Today (Live)</span>
+</div>
+</div>
+<!-- Donut Chart: Threat Taxonomy (5 cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Threat Taxonomy</h2>
+<span class="font-data-mono text-label-sm text-outline">Q2 Aggregate</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Categorized neural classification</p>
+</div>
+<div class="flex items-center justify-center gap-6 my-auto">
+<!-- SVG Donut Chart -->
+<div class="relative w-36 h-36 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 120 120">
+<!-- Background Ring -->
+<circle cx="60" cy="60" fill="none" r="46" stroke="#e1fae7" stroke-width="12"></circle>
+<!-- Microplastics 38% -> 289 * 0.38 = 110 -->
+<circle cx="60" cy="60" fill="none" r="46" stroke="#0d631b" stroke-dasharray="110 289" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Illegal Dumping 26% -> 289 * 0.26 = 75 -->
+<circle cx="60" cy="60" fill="none" r="46" stroke="#005faf" stroke-dasharray="75 289" stroke-dashoffset="-110" stroke-width="12"></circle>
+<!-- Cyanobacteria Algae 21% -> 289 * 0.21 = 60.7 -->
+<circle cx="60" cy="60" fill="none" r="46" stroke="#007d57" stroke-dasharray="61 289" stroke-dashoffset="-185" stroke-width="12"></circle>
+<!-- Flare / Combustion 15% -> 289 * 0.15 = 43.3 -->
+<circle cx="60" cy="60" fill="none" r="46" stroke="#ba1a1a" stroke-dasharray="43 289" stroke-dashoffset="-246" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface font-bold leading-none">1.8k</span>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Signals</span>
+</div>
+</div>
+<!-- Legend Items -->
+<div class="space-y-2 flex-1">
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
+<span class="text-on-surface truncate">Microplastics</span>
+</div>
+<span class="font-data-mono font-semibold text-on-surface">38%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0"></span>
+<span class="text-on-surface truncate">Illegal Dumping</span>
+</div>
+<span class="font-data-mono font-semibold text-on-surface">26%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container shrink-0"></span>
+<span class="text-on-surface truncate">Algal Bloom</span>
+</div>
+<span class="font-data-mono font-semibold text-on-surface">21%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error shrink-0"></span>
+<span class="text-on-surface truncate">Flare / Emissions</span>
+</div>
+<span class="font-data-mono font-semibold text-on-surface">15%</span>
+</div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Primary Hotspot Basin</span>
+<span class="font-data-mono text-data-mono text-primary font-semibold">Tidewater Delta #04</span>
+</div>
+</div>
+</div>
+<!-- Resolution Velocity Bar Chart Widget Row -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Response Velocity &amp; Turnaround</h3>
+<p class="font-body-sm text-body-sm text-outline">Average elapsed hours from incident confirmation to site mitigation</p>
+</div>
+<div class="flex items-center gap-2 font-data-mono text-label-sm">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-semibold">Live Avg: 4.8 hrs</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- High Severity -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-3">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm uppercase tracking-wider font-semibold">High Severity</span>
+<span class="font-data-mono text-data-mono font-bold text-error">1.8 hrs</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 25%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-data-mono text-outline">
+<span>Target SLA: &lt; 2.5 hrs</span>
+<span class="text-primary font-medium">✓ Compliant</span>
+</div>
+</div>
+<!-- Medium Severity -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-3">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">Med Severity</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">5.2 hrs</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 58%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-data-mono text-outline">
+<span>Target SLA: &lt; 6.0 hrs</span>
+<span class="text-primary font-medium">✓ Compliant</span>
+</div>
+</div>
+<!-- Low Severity -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-3">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">Low Severity</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">11.4 hrs</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 80%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-data-mono text-outline">
+<span>Target SLA: &lt; 14.0 hrs</span>
+<span class="text-primary font-medium">✓ Compliant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Reports Data Table / Feed -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm space-y-space-md">
+<!-- Header with Filters & Search -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Active Incident Reports &amp; Dispatches</h3>
+<p class="font-body-sm text-body-sm text-outline">Field telemetry, multispectral drone images, and verified citizen submissions</p>
+</div>
+<!-- Category Filter Pills & Search -->
+<div class="flex flex-wrap items-center gap-2">
+<div class="flex items-center bg-surface-container p-1 rounded-lg">
+<button class="px-3 py-1 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-xs" type="button">All (128)</button>
+<button class="px-3 py-1 rounded-md text-error hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">High (47)</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">Water</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">Solid Waste</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">Air</button>
+</div>
+<div class="relative">
+<input class="pl-8 pr-3 py-1.5 bg-surface-container rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary w-44" placeholder="Filter incidents..." type="text"/>
+<span class="material-symbols-outlined absolute left-2 top-2 text-[16px] text-outline">search</span>
+</div>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="text-outline font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low rounded-lg">
+<th class="py-3 px-4 rounded-l-lg">Incident Details</th>
+<th class="py-3 px-4">Severity</th>
+<th class="py-3 px-4">Basin / Coordinates</th>
+<th class="py-3 px-4">Submitted By</th>
+<th class="py-3 px-4">Logged</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4 text-right rounded-r-lg">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0" data-alt="Close up drone aerial footage of an emerald-tinted industrial waterway contaminated by chemical effluent plumes, moody diffuse daylight with organic reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3phw_xYamdLtKdCOdxBbAh17c1-ZWum9Tn-VO2Ohfkc1yYEaeuYCA6MJk_EqCJDrgsHpIVVXJaN21ZLe3hqeZoE5H294L5wAbqNQdDYbm0Yja6TA5spqoUCKOt4Ap-OdI2XU0qTYNRpD6e6TGn_bQNVZ7r9DEnpy_jpGCfKAGi4VT1L053wGOWqmUH6OmJDOrv3qB0bK_dZjJKFAcDtR2Tfqg8sXj8PuH1GprI-Lh"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-primary text-[11px] font-semibold">#INC-8812</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Effluent Discharge Spill</span>
+</div>
+<span class="text-body-sm text-outline truncate text-[12px]">Sector 04-B Estuary marshlands</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>High
+              </span>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-on-surface-variant">
+<span>34.0522° N, 118.2437° W</span>
+<div class="text-[11px] text-outline">Rio Salado Basin</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-bold text-[10px] flex items-center justify-center">AS</div>
+<span class="text-on-surface font-medium">A. Solares (Ranger)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-outline">12m ago</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-error font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>Dispatch Active
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-medium hover:bg-primary-container hover:text-on-primary transition-all" type="button">
+                Details
+              </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0" data-alt="Field photography of a shoreline covered in high density microplastic granules and washed up nylon fishing nets, cool muted maritime lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb1Q2CadRst6sroeGAOP752KX8wuh-Ar42DJsbBBYVycEBb3xZtVb77jeG1K-HSE0ESDIHMn_qiCIjbIi95WOkDDNejp7Miz8nXrYNSExvTcHRUOZO-Xk2xP3_kcQoHrCi7X2deJP7HHfMG6dqABSN4GkHVxdHYFj8XAci8GwJYkb-MdqLJDs4W77lwdY7x4N0Tm253fmzlu_OgD020wayMR3wX--slHPFgaTCQMAo"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-primary text-[11px] font-semibold">#INC-8809</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dense Microplastic Flotsam</span>
+</div>
+<span class="text-body-sm text-outline truncate text-[12px]">Pelican Point coastal reserve</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Medium
+              </span>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-on-surface-variant">
+<span>34.0211° N, 118.4901° W</span>
+<div class="text-[11px] text-outline">Coastal Zone Alpha</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-bold text-[10px] flex items-center justify-center">CP</div>
+<span class="text-on-surface font-medium">Citizen Patrol #14</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-outline">48m ago</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Triaged
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-medium hover:bg-primary-container hover:text-on-primary transition-all" type="button">
+                Details
+              </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0" data-alt="Satellite imagery showing turquoise green algal bloom swaths spreading across an inland lake, crisp aerial geometric clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD32h4Ye6EieuoGG7zJDftvPkBxIUc_Q_c78SD8_B3ANuGe-hJ9LzXqwfLkMC7u10Khgd3lvO4M6Eh9MTrYYPI40rsHBC6iLxVlhIiENZQ1nMdycLZXmHRUKBIOQHx7btgboLlxTR-fdpTG8fViIMSnpHp-QOa2TU_EjBzppMKExEbf1fMpAENGMGspo0pAnZubx3yDyJ8LmVQl9HCAVih2E8K0HgVBTqTC68VMn47H"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-primary text-[11px] font-semibold">#INC-8798</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Cyanobacteria Bloom Surge</span>
+</div>
+<span class="text-body-sm text-outline truncate text-[12px]">Mirror Reservoir South Inlet</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Low
+              </span>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-on-surface-variant">
+<span>34.1105° N, 118.1284° W</span>
+<div class="text-[11px] text-outline">Upper Reservoir</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary font-bold text-[10px] flex items-center justify-center">AI</div>
+<span class="text-on-surface font-medium">Sentinel-2 AutoScan</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-outline">2h 15m ago</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Monitoring
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-medium hover:bg-primary-container hover:text-on-primary transition-all" type="button">
+                Details
+              </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0" data-alt="Dense woodland edge showing cleared piles of illegal construction debris and industrial pallets being tagged by ecological officers, overcast soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw2U1ElJQfNQ3sLHn72P-B8k8MgqJcKMmJMtzJ85lfx-P8Z5Uf0vL98iIJ1iQRHUjtCe3-ataTfX0zAmtvj_lBLa-Vyd3UxwrmJO6BZlC7y7Df8XlXSYfWhgp94z2v4N_CXWSJ52KxrPJpCJNY8sdDXwT8GoKOr7O6FJAb-GE0uVIKihRk2sQqpAdaVuzTo6bp2rn-xKcephBFxf2zecHjKPdekS4we4uIYzCQ1K77"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-primary text-[11px] font-semibold">#INC-8785</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Commercial Solid Waste Dump</span>
+</div>
+<span class="text-body-sm text-outline truncate text-[12px]">Ponderosa Greenbelt km 14</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>High
+              </span>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-on-surface-variant">
+<span>34.2819° N, 118.3490° W</span>
+<div class="text-[11px] text-outline">Foothill Watershed</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-bold text-[10px] flex items-center justify-center">MK</div>
+<span class="text-on-surface font-medium">M. Kross (Squad 04)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-[12px] text-outline">4h ago</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>Resolved
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-medium hover:bg-primary-container hover:text-on-primary transition-all" type="button">
+                Details
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Summary Footer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-space-xs">
+<div class="font-data-mono text-outline text-[12px]">
+        Showing <span class="text-on-surface font-semibold">1-4</span> of 128 active cases
+      </div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-data-mono text-label-sm font-semibold" type="button">1</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container text-on-surface-variant font-data-mono text-label-sm hover:bg-surface-container-high transition-colors" type="button">2</button>
+<button class="px-3 py-1 rounded-lg bg-surface-container text-on-surface-variant font-data-mono text-label-sm hover:bg-surface-container-high transition-colors" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container text-on-surface-variant font-data-mono text-label-sm hover:bg-surface-container-high transition-colors" type="button">32</button>
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#88d982","tertiary-fixed-dim":"#68dba9","surface":"#e9ffed","surface-variant":"#d0e8d6","surface-bright":"#e9ffed","tertiary-container":"#007d57","error":"#ba1a1a","on-primary-container":"#cbffc2","primary-fixed":"#a3f69c","error-container":"#ffdad6","on-secondary-fixed-variant":"#004786","on-error-container":"#93000a","on-primary-fixed":"#002204","on-primary":"#ffffff","secondary-container":"#54a0fe","surface-container-lowest":"#ffffff","background":"#e9ffed","on-surface":"#0b1f14","on-tertiary-fixed-variant":"#005137","inverse-surface":"#213528","on-tertiary":"#ffffff","on-background":"#0b1f14","secondary-fixed-dim":"#a5c8ff","surface-tint":"#1b6d24","on-error":"#ffffff","primary-container":"#2e7d32","tertiary":"#006243","secondary":"#005faf","primary":"#0d631b","surface-container-low":"#e1fae7","inverse-on-surface":"#dff7e4","on-primary-fixed-variant":"#005312","on-tertiary-fixed":"#002114","outline":"#707a6c","on-secondary":"#ffffff","outline-variant":"#bfcaba","on-tertiary-container":"#bdffdc","inverse-primary":"#88d982","secondary-fixed":"#d4e3ff","on-secondary-fixed":"#001c3a","on-surface-variant":"#40493d","surface-container-high":"#d6eedc","surface-container-highest":"#d0e8d6","surface-dim":"#c8e0ce","tertiary-fixed":"#85f8c4","on-secondary-container":"#003567","surface-container":"#dcf4e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","margin":"2rem","space-xs":"0.25rem","gutter":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem"},"fontFamily":{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"data-mono":["Space Mono"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"data-mono":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight block">EcoScan</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Citizen Portal</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="upload-and-detect" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span>Upload &amp; Detect</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="detection-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Detection History</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="recommendations-and-action-guides" href="#"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Action Guides</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm" data-path="user-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span>User Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-1"><div class="bg-surface-container rounded-xl p-3.5 flex items-center gap-3"><div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div><div><div class="font-label-sm text-label-sm text-on-surface font-semibold">Local Station #402</div><div class="font-data-mono text-data-mono text-tertiary">Sensor Mesh Active</div></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Log Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/40 placeholder:text-on-surface-variant/70" placeholder="Search detections, environmental threats, guides..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden xl:flex items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-data-mono text-data-mono">AQI 28 (Good)</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-data-mono text-data-mono">Water pH 7.2 (Nominal)</span></div></div><div class="relative flex items-center"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button></div><div class="flex items-center gap-3 pl-3"><div class="text-right hidden sm:block"><div class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Elena Rostova</div><div class="font-label-sm text-label-sm text-tertiary">Citizen Ranger • Tier 2</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-gutter py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg pb-12">
+<!-- Profile Header Hero Banner -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<!-- Ambient Eco Pattern/Background Scrim -->
+<div class="relative w-full h-52 bg-gradient-to-r from-primary-container via-tertiary-container to-secondary overflow-hidden">
+<div class="absolute inset-0 opacity-20 mix-blend-overlay" style="background-image: radial-gradient(circle at 20% 50%, #ffffff 1px, transparent 1px), radial-gradient(circle at 80% 80%, #ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="absolute top-4 right-6 flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-data-mono text-data-mono">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span>
+          GRID TELEMETRY: SYNCED
+        </span>
+</div>
+<div class="absolute -bottom-10 right-12 w-64 h-64 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+</div>
+<!-- Main Identity Row -->
+<div class="px-gutter pb-6 pt-0 relative flex flex-col xl:flex-row xl:items-end justify-between gap-6">
+<div class="flex flex-col sm:flex-row items-start sm:items-end gap-5 -mt-16 sm:-mt-20">
+<!-- Avatar Container -->
+<div class="relative group">
+<div class="w-32 h-32 sm:w-36 sm:h-36 rounded-xl overflow-hidden shadow-xl bg-surface-container-high ring-4 ring-surface-container-lowest relative">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Elena Rostova, a focused woman in her early thirties wearing durable dark pine green outdoor field ranger jacket, warm morning diffused natural forest lighting, highly detailed clean ecological portrait, modern high-fidelity digital photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIiHB1yQjaBVcLwz-Dp3M0U5jbq4vQTIAm8YH_EpcfjbXcG-t74xdBMeXG_QA_o9ItQ48rfojde2a86DzuDTH5tWrR2sNSnr_DPMKkn87EGZAvhMzT_WvGAswdKqQ91dx2i7tZJyt6v_nrM4U9iHdGOZwDcCFqdw7cLy0wIMu8p1b4R7Xfedc8pduGaSf3Skd4FCOcQc1c6SHC890cNKAa3u-AVFryBrqthLjx-q0c"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary rounded-lg p-1.5 shadow-md flex items-center justify-center title='Field Verified'">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<!-- Name & Badges -->
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">Elena Rostova</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider">Citizen Ranger • Tier 2</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-data-mono text-data-mono font-medium">ID #ECO-8842-CR</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex flex-wrap items-center gap-y-1 gap-x-4 mt-0.5">
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">mail</span>
+              elena.rostova@eco-citizen.org
+            </span>
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">call</span>
+              +1 (555) 871-3329
+            </span>
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">near_me</span>
+              Sector 04-B Coastal Basin
+            </span>
+</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-primary text-[20px]">military_tech</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold tracking-wide">
+              EcoScan Citizen Contributor since Oct 2023 • <span class="text-primary font-bold">Top 5% Regional Scout</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-2 xl:pt-0">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-low text-primary font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-2 shadow-sm" id="exportDossierBtn">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Activity Dossier</span>
+</button>
+<button class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all flex items-center gap-2 shadow-md hover:shadow-lg" id="editToggleBtn">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Edit Profile Information</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Impact Statistics Row (Bento Style Matrix) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Stat 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Scans Submitted</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">document_scanner</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">24</div>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1 mt-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+          +4 this monthly cycle
+        </div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Interdictions</span>
+<div class="w-8 h-8 rounded-lg bg-error-container/50 flex items-center justify-center text-error group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">19</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant mt-1">Confirmed Mitigated</div>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">AI Alignment</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">model_training</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-1">
+<div class="font-headline-xl text-headline-xl text-secondary font-bold tracking-tight">98.2%</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 98.2%;"></div>
+</div>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Impact Karma</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed/60 flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-xl text-headline-xl text-tertiary font-bold tracking-tight">1,450</div>
+<div class="font-data-mono text-data-mono text-tertiary font-semibold mt-1">EcoCredits Banked</div>
+</div>
+</div>
+<!-- Stat 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Campaigns</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">4</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Mobilized Field Days</div>
+</div>
+</div>
+</section>
+<!-- Split Grid: Personal Information & Security -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Personal Information & Region Details -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Personal &amp; Biome Profile</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configure your telemetry identity and designated patrol biome.</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">Synchronized</span>
+</div>
+<form class="flex flex-col gap-4 mt-2" id="profileForm" onsubmit="event.preventDefault(); showToast('Profile details updated successfully!');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="fullName">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">person</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all" id="fullName" type="text" value="Elena Rostova"/>
+</div>
+</div>
+<!-- Username -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="username">Display Username</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">alternate_email</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all font-data-mono" id="username" type="text" value="elena_eco"/>
+</div>
+</div>
+</div>
+<!-- Primary Biome / Region -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="biomeSector">Primary Region / Biome</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-tertiary text-[18px]">forest</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all" id="biomeSector" type="text" value="Sector 04-B (Cochin Estuary &amp; Wetlands)"/>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-xs mt-0.5">Assigned Monitoring Hub: Station #402 (Active Sensor Array)</span>
+</div>
+<!-- Notification Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="notifyEmail">Default Notification Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">mail</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all" id="notifyEmail" type="email" value="elena.rostova@eco-citizen.org"/>
+</div>
+</div>
+<!-- Location Dispatch Map Widget -->
+<div class="mt-2 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Patrol Zone Spatial Map</span>
+<span class="font-data-mono text-data-mono text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 9.9312° N, 76.2673° E
+              </span>
+</div>
+<div class="w-full h-44 rounded-xl bg-cover bg-center shadow-inner relative overflow-hidden flex items-end p-3" data-location="Cochin Wetlands, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSuw0jv8yb8cEMj6BBjw7IuN2rHL6aHXn0Nb37UBi-lY9keTBiy2m5cLHku9iFn56QsIIkr-j5-zy1dqvPsojvnkAJoeJaeAE29j6uBZMWeLBK6fvhvLaelSqamKJBSDRWWAlo3O6BVKwidTbBhiAWwtLJ0bN7V4SgTfStTFGIGVdV-JliiQkyyA8ikdzURO66_T6lIqWJyvmd9YlQr46vKRKYOe42NLjJg8glY8C_')">
+<div class="bg-surface/90 backdrop-blur-md rounded-lg p-2.5 text-on-surface flex items-center gap-3 shadow-md max-w-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">radar</span>
+<div class="text-xs">
+<div class="font-label-sm text-label-sm font-semibold text-on-surface">Sector 04-B Sub-Basin</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Telemetry Active: 12 Water Probes, 4 Drone Corridors</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-3">
+<button class="px-6 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-sm" type="submit">
+              Save Changes
+            </button>
+</div>
+</form>
+</div>
+<!-- Field Activity Log Mini-Widget -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Telemetry Dispatch Stream</h3>
+<span class="font-data-mono text-data-mono text-tertiary">Realtime Sync</span>
+</div>
+<div class="space-y-3">
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-md bg-tertiary/15 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-medium">Estuary Turbidity Audit #78</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated 1.4 NTU level at Pier Alpha</p>
+</div>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-xs">Today, 08:42</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-md bg-error/15 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">report</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-medium">High Density Polystyrene Debris</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Intervention squad tagged for cleanup</p>
+</div>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-xs">Yesterday, 14:15</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Account Security & Badges/Achievements -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Account Security Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-3 pb-4">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Account Security</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage credentials and authentication layers.</p>
+</div>
+</div>
+<!-- 2FA Status Pill Box -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between mb-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Two-Factor Authentication</div>
+<div class="font-body-sm text-body-sm text-tertiary">Active (Authenticator App)</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+</div>
+<!-- Password Form -->
+<form class="flex flex-col gap-4" id="passwordForm" onsubmit="event.preventDefault(); showToast('Security password successfully updated.');">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="currPass">Current Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">key</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all" id="currPass" type="password" value="••••••••••••••••"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="newPass">New Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">password</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all" id="newPass" oninput="updatePasswordStrength(this.value)" placeholder="Min. 12 characters" type="password"/>
+</div>
+<!-- Password Strength Meter -->
+<div class="mt-1">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Password Strength</span>
+<span class="font-data-mono text-data-mono text-primary font-semibold" id="strengthText">Strong</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 h-1.5 w-full">
+<div class="h-full rounded-full bg-primary" id="meter1"></div>
+<div class="h-full rounded-full bg-primary" id="meter2"></div>
+<div class="h-full rounded-full bg-primary" id="meter3"></div>
+<div class="h-full rounded-full bg-surface-container-high" id="meter4"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium" for="confirmPass">Confirm New Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">lock</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all" id="confirmPass" placeholder="Re-type new password" type="password"/>
+</div>
+</div>
+<button class="w-full mt-2 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-all flex items-center justify-center gap-2 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">sync_lock</span>
+<span>Update Password</span>
+</button>
+</form>
+</div>
+<!-- Recent Citizen Badges & Achievements Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed/60 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Scout Badges &amp; Accreditations</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated machine-learning certified impact tokens.</p>
+</div>
+</div>
+<span class="font-data-mono text-data-mono text-primary font-bold">3 UNLOCKED</span>
+</div>
+<div class="flex flex-col gap-3.5 mt-2">
+<!-- Badge 1: Plastic Hunter -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex items-start gap-3.5 group">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">delete_sweep</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Plastic Hunter</h4>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-data-mono text-data-mono font-medium">TIER I</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Identified and logged 10+ marine micro and macro plastic debris deposits.</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-data-mono text-data-mono text-tertiary shrink-0">14/10</span>
+</div>
+</div>
+</div>
+<!-- Badge 2: Stream Guardian -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex items-start gap-3.5 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">water_ec</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Stream Guardian</h4>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-data-mono text-data-mono font-medium">FIELD AUDIT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Completed 5+ certified water purity, salinity, and dissolved oxygen field audits.</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-data-mono text-data-mono text-secondary shrink-0">5/5</span>
+</div>
+</div>
+</div>
+<!-- Badge 3: Verified Sentinel -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex items-start gap-3.5 group">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Verified Sentinel</h4>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed-dim text-on-primary-fixed font-data-mono text-data-mono font-medium">RANK #2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Passed municipal bi-annual ground-truth field calibration and optical sensor training.</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">task_alt</span> Certified by Sector Authority
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Next Milestone Teaser -->
+<div class="mt-4 p-3 rounded-lg border-dashed bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">lock_clock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Next: Aerial Drone Dispatcher</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">21/25 Scans</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification element -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="profileToast">
+<div class="bg-inverse-surface text-inverse-on-surface px-5 py-3 rounded-xl shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-[22px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Changes preserved to environmental ledger.</span>
+</div>
+</div>
+<!-- Micro-Interactions Script -->
+<script>
+    function showToast(message) {
+      const toast = document.getElementById('profileToast');
+      const textElem = document.getElementById('toastMessage');
+      if (toast && textElem) {
+        textElem.textContent = message;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+    }
+
+    function updatePasswordStrength(val) {
+      const m1 = document.getElementById('meter1');
+      const m2 = document.getElementById('meter2');
+      const m3 = document.getElementById('meter3');
+      const m4 = document.getElementById('meter4');
+      const st = document.getElementById('strengthText');
+      
+      const len = val.length;
+      if (len === 0) {
+        m1.className = 'h-full rounded-full bg-surface-container-high';
+        m2.className = 'h-full rounded-full bg-surface-container-high';
+        m3.className = 'h-full rounded-full bg-surface-container-high';
+        m4.className = 'h-full rounded-full bg-surface-container-high';
+        st.textContent = 'None';
+      } else if (len < 6) {
+        m1.className = 'h-full rounded-full bg-error';
+        m2.className = 'h-full rounded-full bg-surface-container-high';
+        m3.className = 'h-full rounded-full bg-surface-container-high';
+        m4.className = 'h-full rounded-full bg-surface-container-high';
+        st.textContent = 'Weak';
+        st.className = 'font-data-mono text-data-mono text-error font-semibold';
+      } else if (len < 10) {
+        m1.className = 'h-full rounded-full bg-secondary-container';
+        m2.className = 'h-full rounded-full bg-secondary-container';
+        m3.className = 'h-full rounded-full bg-surface-container-high';
+        m4.className = 'h-full rounded-full bg-surface-container-high';
+        st.textContent = 'Moderate';
+        st.className = 'font-data-mono text-data-mono text-secondary font-semibold';
+      } else {
+        m1.className = 'h-full rounded-full bg-primary';
+        m2.className = 'h-full rounded-full bg-primary';
+        m3.className = 'h-full rounded-full bg-primary';
+        m4.className = 'h-full rounded-full bg-primary';
+        st.textContent = 'Strong';
+        st.className = 'font-data-mono text-data-mono text-primary font-semibold';
+      }
+    }
+
+    const editBtn = document.getElementById('editToggleBtn');
+    if (editBtn) {
+      editBtn.addEventListener('click', () => {
+        const input = document.getElementById('fullName');
+        if (input) {
+          input.focus();
+          showToast('Form editable. Update telemetry contact information.');
+        }
+      });
+    }
+
+    const dossierBtn = document.getElementById('exportDossierBtn');
+    if (dossierBtn) {
+      dossierBtn.addEventListener('click', () => {
+        showToast('Generating encrypted PDF dossier for Sector 04-B...');
+      });
+    }
+  </script>
+</div></main></div></body></html>
