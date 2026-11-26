@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://127.0.0.1:8000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 export const analyzeThreatImage = async (file, category, location, user) => {
   const formData = new FormData();
@@ -11,7 +11,7 @@ export const analyzeThreatImage = async (file, category, location, user) => {
   formData.append('submitted_by', user?.name || 'Citizen User');
 
   const response = await axios.post(`${API_BASE}/analyze`, formData, {
-    timeout: 25000,
+    timeout: 30000,
   });
   return response.data;
 };
@@ -19,7 +19,7 @@ export const analyzeThreatImage = async (file, category, location, user) => {
 export const fetchReports = async (params = {}) => {
   const response = await axios.get(`${API_BASE}/reports`, {
     params,
-    timeout: 5000,
+    timeout: 8000,
   });
   return response.data;
 };
@@ -34,7 +34,7 @@ export const verifyCleanupProof = async (reportId, file, ngoName, coords = null)
   }
 
   const response = await axios.post(`${API_BASE}/reports/${reportId}/verify-cleanup`, formData, {
-    timeout: 25000,
+    timeout: 30000,
   });
   return response.data;
 };
@@ -43,7 +43,7 @@ export const updateReportStatus = async (id, status, assigned_ngo, admin_note = 
   const response = await axios.patch(
     `${API_BASE}/reports/${id}`,
     { status, assigned_ngo, admin_note },
-    { timeout: 5000 }
+    { timeout: 8000 }
   );
   return response.data;
 };
@@ -51,7 +51,7 @@ export const updateReportStatus = async (id, status, assigned_ngo, admin_note = 
 export const deleteReport = async (id, userId) => {
   const response = await axios.delete(`${API_BASE}/reports/${id}`, {
     params: { user_id: userId },
-    timeout: 5000,
+    timeout: 8000,
   });
   return response.data;
 };
